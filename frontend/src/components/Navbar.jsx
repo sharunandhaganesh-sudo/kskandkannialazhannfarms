@@ -52,10 +52,10 @@ export default function Navbar() {
             />
           </div>
           <div className="hidden sm:block leading-tight">
-            <div className="font-serif-display text-[15px] md:text-[17px] font-semibold text-[#1f4d2b]">
-              KSK <span className="text-[#2d2d2a]">&</span> Kannialazhann
+            <div className={`font-serif-display text-[15px] md:text-[17px] font-semibold transition-colors ${scrolled ? "text-[#1f4d2b]" : "text-white"}`}>
+              KSK <span className={scrolled ? "text-[#2d2d2a]" : "text-white"}>&</span> Kannialazhann
             </div>
-            <div className="label-eyebrow text-[#5c5c5c]">Farm · Rajapalayam</div>
+            <div className={`label-eyebrow transition-colors ${scrolled ? "text-[#5c5c5c]" : "text-white/80"}`}>Farm · Rajapalayam</div>
           </div>
         </Link>
 
@@ -68,9 +68,13 @@ export default function Navbar() {
               data-testid={`nav-link-${n.label.toLowerCase()}`}
               className={({ isActive }) =>
                 `px-3 py-2 text-[14px] font-medium transition-all ${
-                  isActive
-                    ? "text-[#1f4d2b]"
-                    : "text-[#2d2d2a]/75 hover:text-[#1f4d2b]"
+                  scrolled
+                    ? isActive
+                      ? "text-[#1f4d2b]"
+                      : "text-[#2d2d2a]/75 hover:text-[#1f4d2b]"
+                    : isActive
+                    ? "text-white"
+                    : "text-white/75 hover:text-white"
                 }`
               }
             >
