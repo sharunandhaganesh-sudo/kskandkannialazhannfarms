@@ -84,7 +84,7 @@ export default function AnimalDetailPage() {
               </h1>
             </Reveal>
             <Reveal delay={160}>
-              <p className="mt-5 text-lg text-[#1f4d2b] italic font-serif-display">
+              <p className="mt-5 text-lg text-[#1f4d2b] font-serif-display">
                 {animal.tagline}
               </p>
             </Reveal>

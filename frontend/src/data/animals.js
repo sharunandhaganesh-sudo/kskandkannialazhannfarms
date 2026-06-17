@@ -2,10 +2,10 @@
 // All image paths point to /public/animals (served from root).
 
 export const CONTACTS = {
-  dogCock: ["7305644912", "7339026424"],
   cowGoat: ["7339598737"],
-  whatsappPrimary: "917305644912",
+  dogCock: ["7305644912", "7339026424"],
   whatsappCowGoat: "917339598737",
+  whatsappPrimary: "917305644912",
   whatsappGroup: "https://chat.whatsapp.com/IGLmtZYLs084kOWixKvNaS?source_surface=21",
   instagram: "https://www.instagram.com/kannialazhann?igsh=dmVnNnVnZXF1Z24w",
   youtube: "https://youtube.com/@kannialazhann?si=mh5HMe7UnDmaX2nL",
@@ -15,16 +15,6 @@ export const CONTACTS = {
 };
 
 export const CATEGORIES = [
-  {
-    slug: "dogs",
-    name: "Native Dogs",
-    tamil: "நாட்டு நாய்கள்",
-    cover: "/animals/Rajapalayam Dog.jpg",
-    blurb:
-      "Four legendary Tamil hound breeds — guardians, hunters, companions. Raised at the soil they were born for.",
-    contact: ["7305644912", "7339026424"],
-    whatsapp: "917305644912",
-  },
   {
     slug: "cows",
     name: "Dairy Cows",
@@ -45,6 +35,16 @@ export const CATEGORIES = [
     contact: ["7339598737"],
     whatsapp: "917339598737",
     price: "₹600/kg",
+  },
+  {
+    slug: "dogs",
+    name: "Native Dogs",
+    tamil: "நாட்டு நாய்கள்",
+    cover: "/animals/Rajapalayam Dog.jpg",
+    blurb:
+      "Four legendary Tamil hound breeds — guardians, hunters, companions. Raised at the soil they were born for.",
+    contact: ["7305644912", "7339026424"],
+    whatsapp: "917305644912",
   },
   {
     slug: "poultry",

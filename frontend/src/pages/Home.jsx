@@ -25,22 +25,22 @@ export default function Home() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-end pt-32 pb-16 md:pb-24 overflow-hidden">
         <img
-          src="/animals/Rajapalayam Dog.jpg"
-          alt="Rajapalayam dog at KSK Farm"
-          className="absolute inset-0 w-full h-full object-cover object-[center_30%] scale-105"
+          src="/animals/Kanni Dog 2.jpg"
+          alt="Kanni dogs at KSK Farm"
+          className="absolute inset-0 w-full h-full object-cover object-[center_25%]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#1f4d2b]/40 via-[#1f4d2b]/30 to-[#1f4d2b]/95" />
         <div className="grain" />
 
         <div className="relative z-10 max-w-[1440px] mx-auto px-5 md:px-10 lg:px-16 w-full">
           <Reveal>
-            <p className="label-eyebrow text-[#f4c20d]">Rajapalayam · Gopalapuram · est. 2021</p>
+            <p className="label-eyebrow text-[#f4c20d]">Rajapalayam · Gopalapuram - 626136 · est. 2021</p>
           </Reveal>
           <Reveal delay={120}>
             <h1 className="font-serif-display text-[#f9f8f6] text-[44px] sm:text-6xl md:text-7xl lg:text-[112px] leading-[0.95] mt-4 max-w-5xl">
               Native breeds.
               <br />
-              <span className="text-[#f4c20d] italic">Honest farming.</span>
+              <span className="text-[#f4c20d]">Honest farming.</span>
               <br />
               Straight from our soil.
             </h1>
@@ -106,7 +106,7 @@ export default function Home() {
       <section className="bg-[#1f4d2b] text-[#f4c20d] border-y border-[#f4c20d]/20 overflow-hidden">
         <div className="flex marquee-track whitespace-nowrap py-5">
           {[...Array(2)].map((_, i) => (
-            <div key={i} className="flex items-center gap-12 px-8 font-serif-display text-2xl md:text-3xl italic">
+            <div key={i} className="flex items-center gap-12 px-8 font-serif-display text-2xl md:text-3xl">
               <span>Chippiparai</span>
               <span className="opacity-50">/</span>
               <span>Kanni</span>
@@ -187,7 +187,9 @@ export default function Home() {
               <Reveal><p className="label-eyebrow text-[#1f4d2b]">What we raise</p></Reveal>
               <Reveal delay={80}>
                 <h2 className="font-serif-display text-4xl md:text-6xl mt-3 text-[#2d2d2a] leading-tight">
-                  Pick a category.<br /><span className="italic text-[#1f4d2b]">Meet the animals.</span>
+                  Pick a category.
+                  <br />
+                  <span className="text-[#1f4d2b]">Meet the animals.</span>
                 </h2>
               </Reveal>
             </div>
@@ -249,7 +251,7 @@ export default function Home() {
           </Reveal>
           <Reveal delay={80}>
             <h2 className="font-serif-display text-4xl md:text-6xl mt-3 text-[#2d2d2a] leading-tight max-w-3xl">
-              We don't sell animals. <em className="text-[#1f4d2b]">We sell trust.</em>
+              We don't sell animals. <span className="text-[#1f4d2b]">We sell trust.</span>
             </h2>
           </Reveal>
 
