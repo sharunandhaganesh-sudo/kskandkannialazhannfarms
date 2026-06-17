@@ -2,7 +2,7 @@ import { Link, useParams, Navigate } from "react-router-dom";
 import { useState } from "react";
 import { ArrowLeft, MessageCircle, Phone, Check } from "lucide-react";
 import Reveal from "../components/Reveal";
-import { getAnimalBySlug, getCategoryBySlug, ANIMALS, CONTACTS } from "../data/animals";
+import { getAnimalBySlug, getCategoryBySlug, ANIMALS } from "../data/animals";
 import { buildWhatsappLink } from "../lib/utils";
 
 export default function AnimalDetailPage() {

@@ -91,16 +91,23 @@ export default function CategoryPage() {
                       <span className="text-[12px] font-semibold text-[#1f4d2b] inline-flex items-center gap-1.5">
                         View details <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
                       </span>
-                      <a
-                        href={buildWhatsappLink(a.whatsapp, `Hi! I'm interested in ${a.name} (${a.tamil}).`)}
-                        target="_blank"
-                        rel="noreferrer"
-                        onClick={(e) => e.stopPropagation()}
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          window.open(
+                            buildWhatsappLink(a.whatsapp, `Hi! I'm interested in ${a.name} (${a.tamil}).`),
+                            "_blank",
+                            "noreferrer"
+                          );
+                        }}
                         data-testid={`card-whatsapp-${a.slug}`}
+                        aria-label={`WhatsApp about ${a.name}`}
                         className="h-9 w-9 rounded-full bg-[#1f4d2b] text-[#f4c20d] flex items-center justify-center hover:bg-[#16381f]"
                       >
                         <MessageCircle size={15} />
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </Link>
