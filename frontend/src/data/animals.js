@@ -3,7 +3,7 @@
 
 export const CONTACTS = {
   cowGoat: ["7339598737"],
-  dogCock: ["7305644912", "7339026424"],
+  dogCock: ["7339026424", "7305644912"],
   whatsappCowGoat: "917339598737",
   whatsappPrimary: "917305644912",
   whatsappGroup: "https://chat.whatsapp.com/IGLmtZYLs084kOWixKvNaS?source_surface=21",
@@ -21,7 +21,7 @@ export const CATEGORIES = [
     tamil: "பால் பசுக்கள்",
     cover: "/animals/HF Cow.jpg",
     blurb:
-      "Premium HF (Holstein Friesian) dairy stock — heavy milkers, pasture-raised, ethically maintained.",
+      "Premium HF dairy stock — heavy milkers, pasture-raised, ethically maintained.",
     contact: ["7339598737"],
     whatsapp: "917339598737",
   },

@@ -55,7 +55,7 @@ export default function Navbar() {
             <div className={`font-serif-display text-[13px] sm:text-[15px] md:text-[17px] font-semibold transition-colors ${scrolled ? "text-[#1f4d2b]" : "text-white"}`}>
               KSK <span className={scrolled ? "text-[#2d2d2a]" : "text-white"}>&</span> Kannialazhann
             </div>
-            <div className={`label-eyebrow text-[11px] sm:text-[12px] transition-colors ${scrolled ? "text-[#5c5c5c]" : "text-white/80"}`}>Farm · Rajapalayam</div>
+            <div className={`label-eyebrow text-[11px] sm:text-[12px] transition-colors ${scrolled ? "text-[#5c5c5c]" : "text-white/80"}`}>Farm · Gopalapuram</div>
           </div>
         </Link>
 
