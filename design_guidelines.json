@@ -1,0 +1,149 @@
+{
+  "theme": "light",
+  "archetype": "Organic & Earthy",
+  "domain": "Agriculture & Livestock Farm",
+  "vibe": "National Geographic editorial meets boutique farm-to-table. Rooted in Tamil Nadu heritage.",
+  "colors": {
+    "primary": "#1f4d2b",
+    "secondary": "#f4c20d",
+    "background": "#F9F8F6",
+    "surface": "#FFFFFF",
+    "text_primary": "#2D2D2A",
+    "text_secondary": "#5C5C5C",
+    "border": "#EAE7DD"
+  },
+  "typography": {
+    "headings": {
+      "family": "Fraunces, serif",
+      "weights": [400, 600, 700],
+      "styles": "tracking-tight, leading-none for large headings, leading-tight for subheadings. Exudes heritage and editorial elegance."
+    },
+    "body": {
+      "family": "DM Sans, sans-serif",
+      "weights": [400, 500],
+      "styles": "leading-relaxed, tracking-normal. Highly readable and modern."
+    },
+    "labels": {
+      "family": "DM Sans, sans-serif",
+      "weights": [600],
+      "styles": "uppercase tracking-[0.2em] text-xs. Used for tags, animal types, and small CTAs."
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous white space, editorial multi-column layouts, large full-bleed imagery.",
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "section_spacing": "py-24 md:py-32",
+    "grid": "Use asymmetrical bento-style grids for categories and 12-column editorial grids for content. Ensure padding inside bordered containers.",
+    "alignment": "Left-align text predominantly for readability; center-align only for short hero statements or quotes."
+  },
+  "components": {
+    "buttons": "Slightly rounded (rounded-lg or rounded-full). Primary CTA: bg-[#1f4d2b] text-white hover:bg-[#16381f]. Secondary CTA: bg-[#f4c20d] text-[#2D2D2A] hover:bg-[#d9ac0b]. Add gentle hover lift (-translate-y-1).",
+    "cards": "Flat surfaces (bg-white) with delicate 1px borders (border-[#EAE7DD]), no heavy drop shadows. Image at the top should have no padding, text below should have p-6 or p-8.",
+    "navigation": "Sticky header with glassmorphism (backdrop-blur-xl bg-[#F9F8F6]/80) and a subtle bottom border. Include Logo, Links, and a prominent 'Contact Us' button.",
+    "footer": "High contrast dark footer (bg-[#1f4d2b] text-[#F9F8F6]). Massive typography for the CTA (e.g., 'Let\\'s Talk'). Include map, social links, and contact info."
+  },
+  "animations": {
+    "scroll": "Implement Lenis for buttery smooth scrolling.",
+    "reveal": "Use Framer Motion for staggered fade-up on scroll for text blocks and cards.",
+    "parallax": "Apply subtle parallax effects to full-bleed background images.",
+    "interactions": "Image zoom inside containers on hover (overflow-hidden wrapper, scale-105 on hover, transition-transform duration-500)."
+  },
+  "pages": [
+    {
+      "name": "Home",
+      "sections": [
+        "Hero: Full-bleed cinematic image of the farm with a dark gradient overlay for text readability. Massive serif headline. Dual logos visible in nav or hero.",
+        "About/Story: Editorial layout, 2 columns. Text on left, sticky image on right.",
+        "Categories: Bento grid showcasing animal categories (Dogs, Cows, Goats, Poultry).",
+        "Lead Gen: A massive inline CTA section and a floating WhatsApp button."
+      ]
+    },
+    {
+      "name": "Category Page",
+      "sections": [
+        "Hero: Category-specific banner with deep green background and elegant typography.",
+        "Grid: Minimalist cards for each animal showing image, name, Tamil name, and pricing badge if applicable."
+      ]
+    },
+    {
+      "name": "Animal Detail Page",
+      "sections": [
+        "Layout: 50/50 split. Left side sticky details (Name, Tamil name, Price, Description, WhatsApp CTA), right side scrolling gallery of images."
+      ]
+    }
+  ],
+  "media": {
+    "logos": [
+      {
+        "url": "/animals/Logos.jpg",
+        "category": "brand_logo",
+        "description": "Dual logo for KSK Farm & Kannialazhann. Contains Kannialazhann oval logo (left) + KSK Farm shield logo (right)."
+      }
+    ],
+    "hero_backgrounds": [
+      {
+        "url": "https://images.unsplash.com/photo-1739604459903-5964eb2c01b2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwyfHx0YW1pbCUyMG5hZHUlMjBhZ3JpY3VsdHVyZSUyMGZhcm0lMjBzdW5yaXNlfGVufDB8fHx8MTc4MTY3ODIxN3ww&ixlib=rb-4.1.0&q=85",
+        "category": "hero",
+        "description": "Cinematic Tamil Nadu farm landscape with mountain for Home page hero background."
+      }
+    ],
+    "textures": [
+      {
+        "url": "https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHN1YnRsZSUyMG5hdHVyYWwlMjB0ZXh0dXJlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3ODE2NzgyMTd8MA&ixlib=rb-4.1.0&q=85",
+        "category": "background_texture",
+        "description": "Subtle natural texture for off-white backgrounds if needed."
+      }
+    ],
+    "images": [
+      {"url": "/animals/Chippiparai Dog.jpg", "category": "dog"},
+      {"url": "/animals/Chippiparai Dog 2.jpg", "category": "dog"},
+      {"url": "/animals/Chippiparai Puppies.jpg", "category": "dog"},
+      {"url": "/animals/Kanni Dog.jpg", "category": "dog"},
+      {"url": "/animals/Kanni Dog 2.jpg", "category": "dog"},
+      {"url": "/animals/Kombai dog.jpg", "category": "dog"},
+      {"url": "/animals/Rajapalayam Dog.jpg", "category": "dog"},
+      {"url": "/animals/Rajapalayam puppies.jpg", "category": "dog"},
+      {"url": "/animals/HF Cow.jpg", "category": "cow"},
+      {"url": "/animals/HF Cow2.jpg", "category": "cow"},
+      {"url": "/animals/Goat.jpg", "category": "goat"},
+      {"url": "/animals/Sembari ( pottu aadu ).jpg", "category": "goat"},
+      {"url": "/animals/Sembari(Mayilambadi).jpg", "category": "goat"},
+      {"url": "/animals/Naatu koli.jpg", "category": "poultry"},
+      {"url": "/animals/Red Sonali.jpg", "category": "poultry"},
+      {"url": "/animals/Sanda koli.jpg", "category": "poultry"},
+      {"url": "/animals/Sanda Seval.jpg", "category": "poultry"}
+    ]
+  },
+  "content_details": {
+    "pricing": {
+      "Goat": "₹600/kg",
+      "Naatu koli": "₹600/kg",
+      "Others": "Contact for price"
+    },
+    "location": "Rajapalayam, Gopalapuram-626136",
+    "contacts": {
+      "Dog & Cock": "7305644912, 7339026424",
+      "Cow & Goat": "7339598737",
+      "WhatsApp": "7305644912"
+    },
+    "social": {
+      "Instagram": "@kannialazhann",
+      "YouTube": "@kannialazhann",
+      "WhatsApp_Group": "Available"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use React Router (react-router-dom) for navigating between Home, Categories, and Animal Details pages.",
+    "Implement Lenis smooth scrolling in the main app layout.",
+    "Use Framer Motion heavily for scroll reveals, hover lifts, and page transitions.",
+    "Create a static 'data.js' file exporting the animal lists to act as the database.",
+    "All images must use the exact URLs provided in the media section (e.g., '/animals/Chippiparai Dog.jpg'). Handle spaces correctly in the src attribute.",
+    "No placeholder images (like via.placeholder.com) are allowed. If an image is missing, reuse an appropriate animal image or the hero background.",
+    "Floating WhatsApp CTA should be visible on all pages, linking to `https://wa.me/917305644912`.",
+    "Include the Google Maps embed for 'KSK FARMS' in the Footer or Contact section.",
+    "Add 'data-testid' attributes to all interactive elements for testing (e.g., data-testid='whatsapp-cta').",
+    "For the UI, avoid standard Shadcn card component looks. Use raw HTML/Tailwind to build flat editorial style blocks, big typography, and full-width images.",
+    "Include Tamil names alongside English names as requested by the user.",
+    "Use lucide-react for all icons."
+  ]
+}
