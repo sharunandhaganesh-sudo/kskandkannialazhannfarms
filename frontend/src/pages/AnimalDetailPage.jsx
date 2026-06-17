@@ -1,5 +1,5 @@
 import { Link, useParams, Navigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowLeft, MessageCircle, Phone, Check } from "lucide-react";
 import Reveal from "../components/Reveal";
 import useSEO from "../hooks/useSEO";
@@ -10,6 +10,13 @@ export default function AnimalDetailPage() {
   const { slug } = useParams();
   const animal = getAnimalBySlug(slug);
   const [activeImg, setActiveImg] = useState(animal?.gallery[0]);
+
+  useEffect(() => {
+    if (animal) {
+      setActiveImg(animal.gallery[0]);
+      window.scrollTo(0, 0);
+    }
+  }, [slug, animal]);
 
   useSEO({
     title: animal
