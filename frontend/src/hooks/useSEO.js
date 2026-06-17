@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const DEFAULT_OG = "/animals/Rajapalayam Dog.jpg";
+const DEFAULT_OG = "/animals/Kanni Dog 2.jpg";
 
 export default function useSEO({ title, description, image, url }) {
   useEffect(() => {
