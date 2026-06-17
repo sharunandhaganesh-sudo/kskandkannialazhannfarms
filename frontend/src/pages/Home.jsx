@@ -18,7 +18,7 @@ export default function Home() {
       "KSK & Kannialazhann Farm — Native Tamil Dogs, HF Cows, Sembari Goats & Country Chicken | Rajapalayam",
     description:
       "Family-run farm in Gopalapuram, Rajapalayam. Chippiparai, Kanni, Kombai, Rajapalayam dogs · HF Cows · Sembari goats (₹600/kg) · Naatu Koli (₹600/kg) · farm-fresh eggs.",
-    image: "/animals/Rajapalayam Dog.jpg",
+    image: "/animals/Kanni Dog 2.jpg",
   });
   return (
     <div className="overflow-x-hidden">
