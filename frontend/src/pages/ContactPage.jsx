@@ -10,7 +10,7 @@ export default function ContactPage() {
   useSEO({
     title: "Contact KSK & Kannialazhann Farm — WhatsApp & Phone | Rajapalayam",
     description:
-      "Call or WhatsApp KSK & Kannialazhann Farm directly. Dogs / Poultry / Eggs: +91 7305644912. Cow & Goat: +91 7339598737. Visit us in Gopalapuram, Rajapalayam.",
+      "Call or WhatsApp KSK & Kannialazhann Farm directly. Cow & Goat: +91 7339598737. Dogs / Poultry / Eggs: +91 7305644912, +91 7339026424. Visit us in Gopalapuram, Rajapalayam.",
   });
   const [form, setForm] = useState({
     name: "",
@@ -133,8 +133,7 @@ Message: ${form.message || "—"}`;
                 </a>
                 <p className="text-[12px] text-[#5c5c5c] -mt-2">
                   Tap the button and WhatsApp will open with your message
-                  pre-filled, sent to the right team — Dogs / Poultry / Eggs go
-                  to +91 7305644912, Cows & Goats go to +91 7339598737.
+                  pre-filled, sent to the right team — Cows & Goats go to +91 7339598737, Dogs / Poultry / Eggs go to +91 7305644912.
                 </p>
               </form>
             </div>
@@ -147,12 +146,12 @@ Message: ${form.message || "—"}`;
                 <p className="label-eyebrow text-[#1f4d2b]">Phone numbers</p>
                 <div className="mt-4 grid gap-5">
                   <div className="border-t border-[#eae7dd] pt-4">
-                    <p className="label-eyebrow text-[#5c5c5c]">Dogs & Cocks</p>
-                    {CONTACTS.dogCock.map((n) => (
+                    <p className="label-eyebrow text-[#5c5c5c]">Cow & Goat</p>
+                    {CONTACTS.cowGoat.map((n) => (
                       <a
                         key={n}
                         href={`tel:+91${n}`}
-                        data-testid={`contact-tel-dog-${n}`}
+                        data-testid={`contact-tel-cow-${n}`}
                         className="block font-serif-display text-2xl md:text-3xl text-[#1f4d2b] hover:text-[#16381f]"
                       >
                         +91 {n}
@@ -160,12 +159,12 @@ Message: ${form.message || "—"}`;
                     ))}
                   </div>
                   <div className="border-t border-[#eae7dd] pt-4">
-                    <p className="label-eyebrow text-[#5c5c5c]">Cow & Goat</p>
-                    {CONTACTS.cowGoat.map((n) => (
+                    <p className="label-eyebrow text-[#5c5c5c]">Dogs & Roosters</p>
+                    {CONTACTS.dogCock.map((n) => (
                       <a
                         key={n}
                         href={`tel:+91${n}`}
-                        data-testid={`contact-tel-cow-${n}`}
+                        data-testid={`contact-tel-dog-${n}`}
                         className="block font-serif-display text-2xl md:text-3xl text-[#1f4d2b] hover:text-[#16381f]"
                       >
                         +91 {n}

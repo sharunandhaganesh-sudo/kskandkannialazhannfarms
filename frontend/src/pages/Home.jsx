@@ -57,7 +57,7 @@ export default function Home() {
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <a
                 href={buildWhatsappLink(
-                  CONTACTS.whatsappPrimary,
+                  CONTACTS.whatsappCowGoat,
                   "Hi! I want to enquire about animals at KSK & Kannialazhann Farm."
                 )}
                 target="_blank"
@@ -68,11 +68,11 @@ export default function Home() {
                 <MessageCircle size={16} /> WhatsApp Us
               </a>
               <a
-                href={`tel:+91${CONTACTS.dogCock[0]}`}
+                href={`tel:+91${CONTACTS.cowGoat[0]}`}
                 data-testid="hero-call-btn"
                 className="inline-flex items-center gap-2 px-6 py-4 rounded-full bg-white/10 backdrop-blur border border-white/30 text-white font-semibold text-[14px] hover:bg-white/20 transition-all"
               >
-                <Phone size={16} /> Call +91 {CONTACTS.dogCock[0]}
+                <Phone size={16} /> Call +91 {CONTACTS.cowGoat[0]}
               </a>
               <Link
                 to="/category/dogs"

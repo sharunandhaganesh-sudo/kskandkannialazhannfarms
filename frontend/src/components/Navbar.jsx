@@ -51,11 +51,11 @@ export default function Navbar() {
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="hidden sm:block leading-tight">
-            <div className={`font-serif-display text-[15px] md:text-[17px] font-semibold transition-colors ${scrolled ? "text-[#1f4d2b]" : "text-white"}`}>
+          <div className="hidden xs:block leading-tight">
+            <div className={`font-serif-display text-[13px] sm:text-[15px] md:text-[17px] font-semibold transition-colors ${scrolled ? "text-[#1f4d2b]" : "text-white"}`}>
               KSK <span className={scrolled ? "text-[#2d2d2a]" : "text-white"}>&</span> Kannialazhann
             </div>
-            <div className={`label-eyebrow transition-colors ${scrolled ? "text-[#5c5c5c]" : "text-white/80"}`}>Farm · Rajapalayam</div>
+            <div className={`label-eyebrow text-[11px] sm:text-[12px] transition-colors ${scrolled ? "text-[#5c5c5c]" : "text-white/80"}`}>Farm · Rajapalayam</div>
           </div>
         </Link>
 
@@ -85,7 +85,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <a
-            href={`tel:+91${CONTACTS.dogCock[0]}`}
+            href={`tel:+91${CONTACTS.cowGoat[0]}`}
             data-testid="navbar-call-btn"
             className="hidden md:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#1f4d2b] hover:bg-[#16381f] text-white text-[13px] font-semibold transition-all hover:-translate-y-[1px]"
           >
@@ -125,11 +125,11 @@ export default function Navbar() {
               </NavLink>
             ))}
             <a
-              href={`tel:+91${CONTACTS.dogCock[0]}`}
+              href={`tel:+91${CONTACTS.cowGoat[0]}`}
               className="mt-5 inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-[#1f4d2b] text-white font-semibold"
               data-testid="mobile-call-btn"
             >
-              <Phone size={16} /> Call: +91 {CONTACTS.dogCock[0]}
+              <Phone size={16} /> Call: +91 {CONTACTS.cowGoat[0]}
             </a>
           </div>
         </div>
