@@ -1,6 +1,7 @@
 import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowRight, MessageCircle, Phone } from "lucide-react";
 import Reveal from "../components/Reveal";
+import useSEO from "../hooks/useSEO";
 import { getCategoryBySlug, getAnimalsByCategory, CONTACTS } from "../data/animals";
 import { buildWhatsappLink } from "../lib/utils";
 
@@ -8,6 +9,16 @@ export default function CategoryPage() {
   const { slug } = useParams();
   const category = getCategoryBySlug(slug);
   const animals = getAnimalsByCategory(slug);
+
+  useSEO({
+    title: category
+      ? `${category.name} (${category.tamil}) — KSK & Kannialazhann Farm`
+      : "KSK & Kannialazhann Farm",
+    description: category
+      ? `${category.blurb} Direct from our farm in Rajapalayam. ${category.price ? "Live weight " + category.price + "." : ""}`
+      : undefined,
+    image: category?.cover,
+  });
 
   if (!category) return <Navigate to="/" replace />;
 

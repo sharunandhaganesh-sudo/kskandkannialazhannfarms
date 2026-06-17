@@ -113,7 +113,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-[12px] text-[#f9f8f6]/65">
-              © {new Date().getFullYear()} KSK Farm × Kannialazhann · Gopalapuram, Rajapalayam
+              © {new Date().getFullYear()} KSK & Kannialazhann Farm · Gopalapuram, Rajapalayam
             </p>
           </div>
           <div className="flex gap-5 text-[12px] text-[#f9f8f6]/70">

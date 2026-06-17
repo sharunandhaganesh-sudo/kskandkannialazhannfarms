@@ -2,6 +2,7 @@ import { Link, useParams, Navigate } from "react-router-dom";
 import { useState } from "react";
 import { ArrowLeft, MessageCircle, Phone, Check } from "lucide-react";
 import Reveal from "../components/Reveal";
+import useSEO from "../hooks/useSEO";
 import { getAnimalBySlug, getCategoryBySlug, ANIMALS } from "../data/animals";
 import { buildWhatsappLink } from "../lib/utils";
 
@@ -9,6 +10,16 @@ export default function AnimalDetailPage() {
   const { slug } = useParams();
   const animal = getAnimalBySlug(slug);
   const [activeImg, setActiveImg] = useState(animal?.gallery[0]);
+
+  useSEO({
+    title: animal
+      ? `${animal.name} (${animal.tamil}) — ${animal.tagline} | KSK & Kannialazhann Farm`
+      : "KSK & Kannialazhann Farm",
+    description: animal
+      ? `${animal.description.slice(0, 155)}…`
+      : undefined,
+    image: animal?.hero,
+  });
 
   if (!animal) return <Navigate to="/" replace />;
 

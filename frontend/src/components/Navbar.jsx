@@ -53,7 +53,7 @@ export default function Navbar() {
           </div>
           <div className="hidden sm:block leading-tight">
             <div className="font-serif-display text-[15px] md:text-[17px] font-semibold text-[#1f4d2b]">
-              KSK <span className="text-[#2d2d2a]">×</span> Kannialazhann
+              KSK <span className="text-[#2d2d2a]">&</span> Kannialazhann
             </div>
             <div className="label-eyebrow text-[#5c5c5c]">Farm · Rajapalayam</div>
           </div>

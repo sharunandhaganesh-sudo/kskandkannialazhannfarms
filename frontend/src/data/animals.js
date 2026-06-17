@@ -61,7 +61,7 @@ export const CATEGORIES = [
     slug: "eggs",
     name: "Farm Eggs",
     tamil: "முட்டைகள்",
-    cover: "/animals/Naatu koli.jpg",
+    cover: "/animals/Naatu Koli Eggs.jpg",
     blurb:
       "Fresh country chicken eggs, daily from our free-range hens. Rich yolk, strong shell, real nutrition.",
     contact: ["7305644912", "7339026424"],
@@ -321,8 +321,8 @@ export const ANIMALS = [
     category: "eggs",
     name: "Country Chicken Eggs",
     tamil: "நாட்டு கோழி முட்டை",
-    hero: "/animals/Naatu koli.jpg",
-    gallery: ["/animals/Naatu koli.jpg"],
+    hero: "/animals/Naatu Koli Eggs.jpg",
+    gallery: ["/animals/Naatu Koli Eggs.jpg", "/animals/Naatu koli.jpg"],
     tagline: "Real eggs from real hens, every single day.",
     description:
       "Fresh eggs from our free-range Naatu Koli flock — collected daily, never refrigerated for weeks. Rich orange yolk, hard shell, and the taste your parents grew up with. Available retail and wholesale.",

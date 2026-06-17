@@ -1,11 +1,17 @@
 import { useState } from "react";
 import { MessageCircle, Phone, MapPin, Instagram, Youtube, Send } from "lucide-react";
 import Reveal from "../components/Reveal";
+import useSEO from "../hooks/useSEO";
 import { CONTACTS, CATEGORIES } from "../data/animals";
 import { buildWhatsappLink } from "../lib/utils";
 import { toast } from "sonner";
 
 export default function ContactPage() {
+  useSEO({
+    title: "Contact KSK & Kannialazhann Farm — WhatsApp & Phone | Rajapalayam",
+    description:
+      "Call or WhatsApp KSK & Kannialazhann Farm directly. Dogs / Poultry / Eggs: +91 7305644912. Cow & Goat: +91 7339598737. Visit us in Gopalapuram, Rajapalayam.",
+  });
   const [form, setForm] = useState({
     name: "",
     interest: "Dogs",
@@ -15,22 +21,23 @@ export default function ContactPage() {
 
   const handle = (k) => (e) => setForm((p) => ({ ...p, [k]: e.target.value }));
 
-  const submit = (e) => {
-    e.preventDefault();
-    if (!form.name || !form.message) {
-      toast.error("Please fill at least your name and message.");
-      return;
-    }
-    const cat = CATEGORIES.find((c) => c.name === form.interest);
-    const number = cat ? cat.whatsapp : CONTACTS.whatsappPrimary;
-    const text = `Hi KSK & Kannialazhann Farm! 
+  const cat = CATEGORIES.find((c) => c.name === form.interest);
+  const targetNumber = cat ? cat.whatsapp : CONTACTS.whatsappPrimary;
+  const messageText = `Hi KSK & Kannialazhann Farm!
 
-Name: ${form.name}
+Name: ${form.name || "—"}
 Interested in: ${form.interest}
 Phone: ${form.phone || "—"}
 
-Message: ${form.message}`;
-    window.open(buildWhatsappLink(number, text), "_blank");
+Message: ${form.message || "—"}`;
+  const waHref = buildWhatsappLink(targetNumber, messageText);
+
+  const handleSubmitClick = (e) => {
+    if (!form.name || !form.message) {
+      e.preventDefault();
+      toast.error("Please fill at least your name and message.");
+      return;
+    }
     toast.success("Opening WhatsApp with your message…");
   };
 
@@ -66,7 +73,7 @@ Message: ${form.message}`;
                 Opens WhatsApp with your message pre-filled.
               </h2>
               <form
-                onSubmit={submit}
+                onSubmit={(e) => e.preventDefault()}
                 data-testid="contact-form"
                 className="mt-8 grid gap-5"
               >
@@ -114,13 +121,21 @@ Message: ${form.message}`;
                     className="mt-2 w-full px-4 py-3.5 rounded-xl bg-white border border-[#eae7dd] focus:border-[#1f4d2b] focus:outline-none text-[#2d2d2a] resize-none"
                   />
                 </div>
-                <button
-                  type="submit"
+                <a
+                  href={waHref}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  onClick={handleSubmitClick}
                   data-testid="form-submit"
                   className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-[#1f4d2b] text-[#f4c20d] font-semibold text-[14px] hover:-translate-y-[2px] transition-all"
                 >
                   <Send size={15} /> Send via WhatsApp
-                </button>
+                </a>
+                <p className="text-[12px] text-[#5c5c5c] -mt-2">
+                  Tap the button and WhatsApp will open with your message
+                  pre-filled, sent to the right team — Dogs / Poultry / Eggs go
+                  to +91 7305644912, Cows & Goats go to +91 7339598737.
+                </p>
               </form>
             </div>
           </Reveal>

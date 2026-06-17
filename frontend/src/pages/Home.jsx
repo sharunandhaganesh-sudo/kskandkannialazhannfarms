@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Phone, MessageCircle, Sparkles, ShieldCheck, Leaf, MapPin } from "lucide-react";
 import Reveal from "../components/Reveal";
+import useSEO from "../hooks/useSEO";
 import { CATEGORIES, CONTACTS, ANIMALS } from "../data/animals";
 import { buildWhatsappLink } from "../lib/utils";
 
@@ -12,6 +13,13 @@ const STATS = [
 ];
 
 export default function Home() {
+  useSEO({
+    title:
+      "KSK & Kannialazhann Farm — Native Tamil Dogs, HF Cows, Sembari Goats & Country Chicken | Rajapalayam",
+    description:
+      "Family-run farm in Gopalapuram, Rajapalayam. Chippiparai, Kanni, Kombai, Rajapalayam dogs · HF Cows · Sembari goats (₹600/kg) · Naatu Koli (₹600/kg) · farm-fresh eggs.",
+    image: "/animals/Rajapalayam Dog.jpg",
+  });
   return (
     <div className="overflow-x-hidden">
       {/* HERO */}
@@ -39,7 +47,7 @@ export default function Home() {
           </Reveal>
           <Reveal delay={240}>
             <p className="mt-8 max-w-2xl text-[#f9f8f6]/85 text-base md:text-lg leading-relaxed">
-              KSK Farm × Kannialazhann is a joint family farm raising Tamil
+              KSK & Kannialazhann Farm is a joint family farm raising Tamil
               Nadu's finest native dogs, HF cows, Sembari goats and country
               chicken. We don't ship hype — we ship healthy animals.
             </p>
