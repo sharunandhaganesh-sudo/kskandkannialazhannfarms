@@ -24,6 +24,13 @@ export const CATEGORIES = [
       "Premium HF dairy stock — heavy milkers, pasture-raised, ethically maintained.",
     contact: ["7339598737"],
     whatsapp: "917339598737",
+    faqs: [
+      { q: "How much milk does an HF cow give?", a: "Our HF cows average 18–25 litres per day, depending on age, lactation stage, and feeding. All our cows have verified milk records." },
+      { q: "What is the price of an HF cow?", a: "Pricing depends on age, lactation status, and milk yield. Contact us for current rates — we offer transparent, fair pricing." },
+      { q: "Do you deliver outside Rajapalayam?", a: "Yes — we deliver across Tamil Nadu. We arrange trained handlers and transport logistics. Contact us to arrange delivery." },
+      { q: "Are your cows free of disease?", a: "All our cows are health-checked and vaccinated. We maintain strict hygiene and provide veterinary documentation." },
+      { q: "Can I visit the farm?", a: "Absolutely — visits by appointment. You can see the animals, verify health, and discuss breeding/feeding specifics." },
+    ],
   },
   {
     slug: "goats",
@@ -35,6 +42,13 @@ export const CATEGORIES = [
     contact: ["7339598737"],
     whatsapp: "917339598737",
     price: "₹600/kg",
+    faqs: [
+      { q: "What is the price of Sembari goat in Tamil Nadu?", a: "Our native goats are sold live-weight at ₹600/kg, including Sembari Pottu Aadu and Mayilambadi lines. Prices may vary slightly seasonally." },
+      { q: "Do you deliver goats outside Rajapalayam?", a: "Yes — we regularly supply to Srivilliputhur, Sivakasi, Virudhunagar, Sattur and all of Tamil Nadu. See our Areas We Serve page." },
+      { q: "Can I buy goats in bulk for a function or festival?", a: "Yes — bulk orders for weddings, festivals and functions are welcome. Contact us 2-3 weeks in advance to reserve stock." },
+      { q: "Do you sell breeding pairs?", a: "Yes — we have excellent breeding-quality Sembari Pottu and Mayilambadi pairs. They carry strong genetics and proven bloodlines." },
+      { q: "How are the goats transported?", a: "We use clean, well-ventilated transport and trained handlers. We ensure minimal stress and proper loading/unloading at both ends." },
+    ],
   },
   {
     slug: "dogs",
@@ -45,6 +59,13 @@ export const CATEGORIES = [
       "Four legendary Tamil hound breeds — guardians, hunters, companions. Raised at the soil they were born for.",
     contact: ["7305644912", "7339026424"],
     whatsapp: "917305644912",
+    faqs: [
+      { q: "What breeds of native Tamil dogs do you have?", a: "We raise Rajapalayam, Kanni, Chippiparai, and Kombai — all legendary native hound breeds of Tamil Nadu with distinct hunting and guarding traits." },
+      { q: "What is the price of a Rajapalayam puppy?", a: "Pricing varies by lineage, age, and purpose (pet vs. breeding). Contact us for current rates — we offer healthy, well-raised puppies." },
+      { q: "Which breed is best for family guarding?", a: "Rajapalayam and Kombai are excellent for property guarding. Kanni and Chippiparai are smaller, more affectionate for family + guarding." },
+      { q: "Do you provide training?", a: "We raise all puppies with early socialization. For advanced training, we can recommend trusted local trainers." },
+      { q: "Can you export outside Tamil Nadu?", a: "Yes — we can arrange transport across India. Buyers are responsible for local regulations and import requirements." },
+    ],
   },
   {
     slug: "poultry",
@@ -56,6 +77,13 @@ export const CATEGORIES = [
     contact: ["7305644912", "7339026424"],
     whatsapp: "917305644912",
     price: "₹600/kg",
+    faqs: [
+      { q: "What is the price of Naatu Koli (country chicken)?", a: "Live Naatu Koli are sold at ₹600/kg. Fresh meat (cleaned) is also available — contact for details." },
+      { q: "Do you sell eggs from Naatu Koli?", a: "Yes — see our Farm Eggs category. Daily collection, never refrigerated, rich yolk, ideal for cooking and breeding." },
+      { q: "What is the difference between Naatu Koli and Sanda Seval?", a: "Naatu Koli is meat/egg chicken. Sanda Seval is a fighting rooster — bred for game, with championship bloodlines." },
+      { q: "Can I buy Red Sonali for a small home flock?", a: "Yes — Red Sonali are perfect for backyard farming. They lay steadily and provide good meat. Contact for live bird pricing." },
+      { q: "Do you deliver live birds?", a: "Yes — we deliver across Tamil Nadu with proper transport containers and expert handling to minimize stress." },
+    ],
   },
   {
     slug: "eggs",
@@ -66,6 +94,13 @@ export const CATEGORIES = [
       "Fresh country chicken eggs, daily from our free-range hens. Rich yolk, strong shell, real nutrition.",
     contact: ["7305644912", "7339026424"],
     whatsapp: "917305644912",
+    faqs: [
+      { q: "How fresh are your farm eggs?", a: "Collected every morning, never refrigerated for days. You get genuine same-day or next-day eggs with rich yolk." },
+      { q: "What is the price of farm eggs?", a: "Current pricing available on request. Bulk orders and subscriptions get better rates." },
+      { q: "Do you deliver eggs?", a: "Yes — we deliver weekly/bi-weekly orders across Rajapalayam and nearby areas. Contact for delivery schedule." },
+      { q: "Are the eggs organic?", a: "Our hens are free-range, hormone-free, and raised on grain. We don't use antibiotics or artificial feeds." },
+      { q: "Can I order in bulk for a restaurant or institution?", a: "Yes — bulk and wholesale orders are welcome. We offer consistent supply and competitive bulk rates." },
+    ],
   },
 ];
 

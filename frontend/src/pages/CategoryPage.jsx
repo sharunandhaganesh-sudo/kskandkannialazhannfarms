@@ -1,23 +1,52 @@
 import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowRight, MessageCircle, Phone } from "lucide-react";
 import Reveal from "../components/Reveal";
+import Breadcrumbs from "../components/Breadcrumbs";
 import useSEO from "../hooks/useSEO";
 import { getCategoryBySlug, getAnimalsByCategory, CONTACTS } from "../data/animals";
 import { buildWhatsappLink } from "../lib/utils";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../components/ui/accordion";
 
 export default function CategoryPage() {
   const { slug } = useParams();
   const category = getCategoryBySlug(slug);
   const animals = getAnimalsByCategory(slug);
 
+  // Breadcrumb schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://kannialazhannfarm.in/" },
+      { "@type": "ListItem", position: 2, name: category?.name || "Category", item: `https://kannialazhannfarm.in/category/${slug}` },
+    ],
+  };
+
+  // FAQ schema
+  const faqSchema = category?.faqs ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: category.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  } : null;
+
   useSEO({
     title: category
-      ? `${category.name} (${category.tamil}) — KSK & Kannialazhann Farm`
+      ? `${category.name} for Sale in Rajapalayam & Tamil Nadu (${category.tamil}) — KSK & Kannialazhann Farm`
       : "KSK & Kannialazhann Farm",
     description: category
-      ? `${category.blurb} Direct from our farm in Rajapalayam. ${category.price ? "Live weight " + category.price + "." : ""}`
+      ? `${category.blurb} Direct from our farm in Gopalapuram, Rajapalayam — delivering across Tamil Nadu. ${category.price ? "Live weight " + category.price + "." : ""}`
       : undefined,
     image: category?.cover,
+    jsonLd: [breadcrumbSchema, faqSchema].filter(Boolean),
   });
 
   if (!category) return <Navigate to="/" replace />;
@@ -35,6 +64,9 @@ export default function CategoryPage() {
         <div className="grain" />
         <div className="relative max-w-[1440px] mx-auto px-5 md:px-10 lg:px-16 py-24 md:py-36">
           <Reveal>
+            <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: category?.name, href: `/category/${slug}` }]} />
+          </Reveal>
+          <Reveal delay={120}>
             <Link to="/" className="label-eyebrow text-[#f4c20d] hover:underline">
               ← Back to farm
             </Link>
@@ -160,6 +192,33 @@ export default function CategoryPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ SECTION */}
+      {category?.faqs && category.faqs.length > 0 && (
+        <section className="py-20 md:py-28 bg-[#f9f8f6]">
+          <div className="max-w-3xl mx-auto px-5 md:px-10">
+            <Reveal>
+              <h2 className="font-serif-display text-4xl md:text-5xl text-[#2d2d2a] mb-12">
+                Frequently asked.
+              </h2>
+            </Reveal>
+            <Accordion type="single" collapsible>
+              {category.faqs.map((faq, i) => (
+                <Reveal key={i} delay={i * 50}>
+                  <AccordionItem value={`faq-${i}`} className="border-b border-[#eae7dd]">
+                    <AccordionTrigger className="text-left text-base md:text-lg font-semibold text-[#2d2d2a] hover:text-[#1f4d2b] py-5">
+                      {faq.q}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-[#5c5c5c] pb-4">
+                      {faq.a}
+                    </AccordionContent>
+                  </AccordionItem>
+                </Reveal>
+              ))}
+            </Accordion>
+          </div>
+        </section>
+      )}
     </div>
   );
 }

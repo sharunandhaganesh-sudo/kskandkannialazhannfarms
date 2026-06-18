@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 
-const DEFAULT_OG = "/animals/Kanni Dog 2.jpg";
+const DEFAULT_OG = "/animals/kanni-dog-rajapalayam-tamilnadu.jpg";
 
-export default function useSEO({ title, description, image, url }) {
+export default function useSEO({ title, description, image, url, jsonLd, noindex }) {
   useEffect(() => {
     if (title) document.title = title;
 
@@ -36,10 +36,9 @@ export default function useSEO({ title, description, image, url }) {
     setMeta('meta[name="twitter:card"]', "content", "summary_large_image");
     setMeta('meta[property="og:type"]', "content", "website");
 
-    const pageUrl = url || window.location.href;
+    const pageUrl = url || window.location.href.split("?")[0].split("#")[0];
     setMeta('meta[property="og:url"]', "content", pageUrl);
 
-    // Canonical
     let canonical = document.head.querySelector('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement("link");
@@ -47,5 +46,21 @@ export default function useSEO({ title, description, image, url }) {
       document.head.appendChild(canonical);
     }
     canonical.setAttribute("href", pageUrl);
-  }, [title, description, image, url]);
+
+    setMeta('meta[name="robots"]', "content", noindex ? "noindex, nofollow" : "index, follow");
+
+    let script = document.getElementById("page-jsonld");
+    if (jsonLd) {
+      if (!script) {
+        script = document.createElement("script");
+        script.id = "page-jsonld";
+        script.type = "application/ld+json";
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify(jsonLd);
+    } else if (script) {
+      script.remove();
+    }
+  }, [title, description, image, url, jsonLd, noindex]);
 }
+

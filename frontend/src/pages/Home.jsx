@@ -14,11 +14,9 @@ const STATS = [
 
 export default function Home() {
   useSEO({
-    title:
-      "KSK & Kannialazhann Farm — Native Tamil Dogs, HF Cows, Sembari Goats & Country Chicken | Rajapalayam",
-    description:
-      "Family-run farm in Gopalapuram, Rajapalayam. Chippiparai, Kanni, Kombai, Rajapalayam dogs · HF Cows · Sembari goats (₹600/kg) · Naatu Koli (₹600/kg) · farm-fresh eggs.",
-    image: "/animals/Kanni Dog 2.jpg",
+    title: "KSK & Kannialazhann Farm | Goat, Dog, HF Cow & Poultry Farm in Rajapalayam, Gopalapuram, Tamil Nadu",
+    description: "Buy native Tamil dogs (Rajapalayam, Kanni, Kombai, Chippiparai), HF dairy cows, Sembari goats (₹600/kg), Naatu Koli & Sanda Seval roosters (₹600/kg) and farm-fresh eggs. Family farm in Gopalapuram, Rajapalayam — delivering across Tamil Nadu.",
+    image: "/animals/kanni-dog-rajapalayam-tamilnadu.jpg",
   });
   return (
     <div className="overflow-x-hidden">

@@ -2,6 +2,7 @@ import { Link, useParams, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { ArrowLeft, MessageCircle, Phone, Check } from "lucide-react";
 import Reveal from "../components/Reveal";
+import Breadcrumbs from "../components/Breadcrumbs";
 import useSEO from "../hooks/useSEO";
 import { getAnimalBySlug, getCategoryBySlug, ANIMALS } from "../data/animals";
 import { buildWhatsappLink } from "../lib/utils";
@@ -18,6 +19,44 @@ export default function AnimalDetailPage() {
     }
   }, [slug, animal]);
 
+  // Build schemas
+  const category = getCategoryBySlug(animal?.category);
+  const priceMatch = animal?.priceNote.match(/₹\s?(\d+)/) || null;
+  
+  const productSchema = animal ? {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: `${animal.name} (${animal.tamil})`,
+    description: animal.description,
+    image: `https://kannialazhannfarm.in${animal.hero}`,
+    category: category?.name,
+    brand: { "@type": "Brand", name: "KSK & Kannialazhann Farm" },
+    offers: priceMatch ? {
+      "@type": "Offer",
+      priceCurrency: "INR",
+      price: priceMatch[1],
+      availability: "https://schema.org/InStock",
+      areaServed: "Tamil Nadu",
+      url: `https://kannialazhannfarm.in/animal/${animal.slug}`,
+    } : {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      priceCurrency: "INR",
+      areaServed: "Tamil Nadu",
+      url: `https://kannialazhannfarm.in/animal/${animal.slug}`,
+    },
+  } : null;
+
+  const breadcrumbSchema = animal && category ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://kannialazhannfarm.in/" },
+      { "@type": "ListItem", position: 2, name: category.name, item: `https://kannialazhannfarm.in/category/${animal.category}` },
+      { "@type": "ListItem", position: 3, name: animal.name, item: `https://kannialazhannfarm.in/animal/${animal.slug}` },
+    ],
+  } : null;
+
   useSEO({
     title: animal
       ? `${animal.name} (${animal.tamil}) — ${animal.tagline} | KSK & Kannialazhann Farm`
@@ -26,11 +65,11 @@ export default function AnimalDetailPage() {
       ? `${animal.description.slice(0, 155)}…`
       : undefined,
     image: animal?.hero,
+    jsonLd: [productSchema, breadcrumbSchema].filter(Boolean),
   });
 
   if (!animal) return <Navigate to="/" replace />;
 
-  const category = getCategoryBySlug(animal.category);
   const related = ANIMALS.filter(
     (a) => a.category === animal.category && a.slug !== animal.slug
   ).slice(0, 3);
@@ -40,13 +79,11 @@ export default function AnimalDetailPage() {
   return (
     <div className="pt-24 md:pt-28 bg-[#f9f8f6]">
       <div className="max-w-[1440px] mx-auto px-5 md:px-10 lg:px-16 pb-20 md:pb-28">
-        <Link
-          to={`/category/${animal.category}`}
-          data-testid="back-to-category"
-          className="inline-flex items-center gap-2 text-[#1f4d2b] font-semibold text-[13px] hover:gap-3 transition-all"
-        >
-          <ArrowLeft size={14} /> Back to {category?.name}
-        </Link>
+        <Breadcrumbs items={[
+          { label: "Home", href: "/" },
+          { label: category?.name, href: `/category/${animal.category}` },
+          { label: animal.name, href: `/animal/${animal.slug}` },
+        ]} />
 
         <div className="mt-8 grid lg:grid-cols-12 gap-10 lg:gap-16">
           {/* Gallery */}

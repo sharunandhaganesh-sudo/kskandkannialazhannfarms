@@ -1,4 +1,5 @@
 import "./App.css";
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "sonner";
 import Navbar from "./components/Navbar";
@@ -6,10 +7,14 @@ import Footer from "./components/Footer";
 import FloatingCTA from "./components/FloatingCTA";
 import SmoothScroll from "./components/SmoothScroll";
 import ScrollToTop from "./components/ScrollToTop";
-import Home from "./pages/Home";
-import CategoryPage from "./pages/CategoryPage";
-import AnimalDetailPage from "./pages/AnimalDetailPage";
-import ContactPage from "./pages/ContactPage";
+
+// Lazy load page components for code splitting
+const Home = lazy(() => import("./pages/Home"));
+const CategoryPage = lazy(() => import("./pages/CategoryPage"));
+const AnimalDetailPage = lazy(() => import("./pages/AnimalDetailPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
+const AreasWeServePage = lazy(() => import("./pages/AreasWeServePage"));
 
 function App() {
   return (
@@ -19,13 +24,16 @@ function App() {
         <ScrollToTop />
         <Navbar />
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/category/:slug" element={<CategoryPage />} />
-            <Route path="/animal/:slug" element={<AnimalDetailPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="*" element={<Home />} />
-          </Routes>
+          <Suspense fallback={<div className="min-h-screen" />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/category/:slug" element={<CategoryPage />} />
+              <Route path="/animal/:slug" element={<AnimalDetailPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/areas-we-serve" element={<AreasWeServePage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
         <FloatingCTA />
