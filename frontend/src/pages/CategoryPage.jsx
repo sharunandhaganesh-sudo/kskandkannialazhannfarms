@@ -40,10 +40,10 @@ export default function CategoryPage() {
 
   useSEO({
     title: category
-      ? `${category.name} for Sale in Rajapalayam & Tamil Nadu (${category.tamil}) — KSK & Kannialazhann Farm`
+      ? `${category.name} for Sale in Rajapalayam & Gopalapuram, Tamil Nadu (${category.tamil}) — KSK & Kannialazhann Farm`
       : "KSK & Kannialazhann Farm",
     description: category
-      ? `${category.blurb} Direct from our farm in Gopalapuram, Rajapalayam — delivering across Tamil Nadu. ${category.price ? "Live weight " + category.price + "." : ""}`
+      ? `${category.blurb} Farm in Gopalapuram & Rajapalayam. Direct from our farms delivering across Tamil Nadu. ${category.price ? "Live weight " + category.price + "." : ""}`
       : undefined,
     image: category?.cover,
     jsonLd: [breadcrumbSchema, faqSchema].filter(Boolean),

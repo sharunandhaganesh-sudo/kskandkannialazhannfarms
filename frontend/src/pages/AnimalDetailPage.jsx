@@ -59,10 +59,10 @@ export default function AnimalDetailPage() {
 
   useSEO({
     title: animal
-      ? `${animal.name} (${animal.tamil}) — ${animal.tagline} | KSK & Kannialazhann Farm`
+      ? `${animal.name} (${animal.tamil}) in Rajapalayam & Gopalapuram — ${animal.tagline} | KSK & Kannialazhann Farm`
       : "KSK & Kannialazhann Farm",
     description: animal
-      ? `${animal.description.slice(0, 155)}…`
+      ? `${animal.description.slice(0, 120)}… Available at farm in Rajapalayam & Gopalapuram. Direct from KSK Farm & Kannialazhann Farm, Tamil Nadu.`
       : undefined,
     image: animal?.hero,
     jsonLd: [productSchema, breadcrumbSchema].filter(Boolean),
