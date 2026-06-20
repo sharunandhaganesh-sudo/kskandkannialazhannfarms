@@ -14,8 +14,8 @@ const STATS = [
 
 export default function Home() {
   useSEO({
-    title: "KSK & Kannialazhann Farm | Goat, Dog, HF Cow & Poultry Farm in Rajapalayam, Gopalapuram, Tamil Nadu",
-    description: "KSK Farm & Kannialazhann Farm - Best farm in Rajapalayam & Gopalapuram for dogs, goats, cows, hen, rooster & farm eggs. Native Rajapalayam dogs, Kanni dogs, goat in Gopalapuram, cow in Rajapalayam, poultry & eggs. Farms in Rajapalayam & Gopalapuram delivering across Tamil Nadu.",
+    title: "Kannialazhann Farm & KSK Farm | Native Farm Animals - Rajapalayam Dogs, Goats, Cows & Poultry",
+    description: "Kannialazhann Farm & KSK Farm - Your trusted destination for native farm animals. Buy Rajapalayam dogs, Kanni dogs, Sembari goats, HF cows & country poultry from KSK Farm in Gopalapuram. Authentic breeding, quality livestock delivered across Tamil Nadu.",
     image: "/animals/kanni-dog-rajapalayam-tamilnadu.jpg",
   });
   return (
@@ -24,7 +24,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-end pt-32 pb-16 md:pb-24 overflow-hidden">
         <img
           src="/animals/Kanni Dog 2.jpg"
-          alt="Kanni dogs at KSK Farm"
+          alt="Kanni dogs at Kannialazhann Farm & KSK Farm in Rajapalayam"
           className="absolute inset-0 w-full h-full object-cover object-[center_25%]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#1f4d2b]/40 via-[#1f4d2b]/30 to-[#1f4d2b]/95" />
