@@ -22,6 +22,7 @@ export const CATEGORIES = [
     cover: "/animals/HF Cow.jpg",
     blurb:
       "Premium HF dairy stock — heavy milkers, pasture-raised, ethically maintained.",
+    keywords: "HF cow for sale Tamil Nadu, Holstein Friesian dairy cow Rajapalayam, high milk yield dairy cow, lactating cow for sale, pregnant cow seller, dairy cow price Tamil Nadu, HF cow breeding pair, dairy farming cows Tamil Nadu, jersey cow vs HF cow, dairy cow export India, bulk dairy cows Rajapalayam",
     contact: ["7339598737"],
     whatsapp: "917339598737",
     faqs: [
@@ -39,6 +40,7 @@ export const CATEGORIES = [
     cover: "/animals/Goat.jpg",
     blurb:
       "Sembari and native breeds — Strong genetics, healthy herd.",
+    keywords: "Sembari goat for sale Tamil Nadu, Pottu Aadu goat Rajapalayam, Mayilambadi goat breeder, native goat meat Tamil Nadu, goat price per kg Tamil Nadu, goat for sale Rajapalayam, bulk goat order wedding function, breeding pair goats Tamil Nadu, goat farm Virudhunagar Sivakasi, healthy goat seller, goat fattening for sale, live goat purchase Tamil Nadu",
     contact: ["7339598737"],
     whatsapp: "917339598737",
     price: "₹600/kg",
@@ -57,6 +59,7 @@ export const CATEGORIES = [
     cover: "/animals/Rajapalayam Dog.jpg",
     blurb:
       "Four legendary Tamil hound breeds — guardians, hunters, companions. Raised at the soil they were born for.",
+    keywords: "Rajapalayam dog for sale, Rajapalayam puppy price, Kanni dog breeder Tamil Nadu, Chippiparai dog Tirunelveli, Kombai dog hunting, native Tamil dog breeds, Indian dog breeds for guarding, sighthound Tamil Nadu, white dog breed Rajapalayam, dog breeder Rajapalayam, puppy training Tamil Nadu, dog stud services, native dog export India, Rajapalayam dog championship, hunting dog Tamil Nadu",
     contact: ["7305644912", "7339026424"],
     whatsapp: "917305644912",
     faqs: [
@@ -74,6 +77,7 @@ export const CATEGORIES = [
     cover: "/animals/Sanda Seval.jpg",
     blurb:
       "Naatu Koli at ₹600/kg, Red Sonali, and prized Sanda Seval fighting roosters.",
+    keywords: "Naatu Koli for sale Tamil Nadu, country chicken breeder Rajapalayam, Sanda Seval rooster championship, fighting rooster seller, Red Sonali bird price, game fowl breeder Tamil Nadu, poultry farm Tamil Nadu, live chicken delivery, Naatu chicken meat quality, free-range chicken farm, Sanda Koli game hens, rooster price Tamil Nadu, poultry breeding pair, chicken for wedding catering",
     contact: ["7305644912", "7339026424"],
     whatsapp: "917305644912",
     price: "₹600/kg",
@@ -92,6 +96,7 @@ export const CATEGORIES = [
     cover: "/animals/Naatu Koli Eggs.jpg",
     blurb:
       "Fresh country chicken eggs, daily from our free-range hens. Rich yolk, strong shell, real nutrition.",
+    keywords: "farm fresh eggs Tamil Nadu, country chicken eggs Rajapalayam, organic eggs delivery, free-range eggs price, desi eggs health benefits, Naatu chicken eggs nutritious, eggs bulk order restaurant, daily egg delivery service, genuine country eggs, organic farming eggs, eggs for baking quality, farm eggs subscription, wholesale egg supplier Tamil Nadu, healthy egg nutrition",
     contact: ["7305644912", "7339026424"],
     whatsapp: "917305644912",
     faqs: [
@@ -120,6 +125,7 @@ export const ANIMALS = [
     tagline: "The royal sighthound of South Tamil Nadu.",
     description:
       "A graceful, deer-hunting sighthound bred for centuries by the royals of Chippiparai. Lean, fast, silent and fiercely loyal to one family. Known for endurance over kilometres, excellent guard instincts, and a calm indoor temperament.",
+    keywords: "Chippiparai dog for sale, Chippiparai puppy price Tirunelveli, sighthound Tamil Nadu hunting, Chippiparai breeder, royal dog breed India, deer hunting dog, Chippiparai temperament, lean dog breed, loyal guard dog native, Chippiparai show dog, hunting sighthound training",
     traits: [
       { label: "Origin", value: "Chippiparai, Tamil Nadu" },
       { label: "Build", value: "Lean sighthound, 60–65cm tall" },
@@ -140,6 +146,7 @@ export const ANIMALS = [
     tagline: "The maiden hound — gifted to the bride.",
     description:
       "Sleek, agile, and almost mythological — Kanni were traditionally given to a bride at her wedding as a guardian. Smaller and more affectionate than Chippiparai, they bond deeply and are unmatched at chasing hare and small game.",
+    keywords: "Kanni dog breed for sale, Kanni puppy price Tamil Nadu, Kanni dog breeder Tirunelveli, Indian native dog affectionate, small hunting dog breed, hare hunting dog, loyal family dog India, Kanni temperament care, dog for apartment living, small guard dog India, Kanni heritage breed",
     traits: [
       { label: "Origin", value: "Tirunelveli region" },
       { label: "Build", value: "Slim, 56–63cm tall" },
@@ -160,6 +167,7 @@ export const ANIMALS = [
     tagline: "The boar-hunter of the Tamil hills.",
     description:
       "Muscular, fearless and built for the wild. Kombai was historically used to hunt wild boar and bison. With a reddish-brown coat, black mask and powerful jaw, they make formidable guard dogs and are deeply protective of their territory.",
+    keywords: "Kombai dog for sale, boar hunting dog Tamil Nadu, Kombai breeder Theni, powerful guard dog India, territorial dog breed, reddish brown dog native, wild animal hunting dog, Kombai aggression training, farm guarding dog, village guard dog, Kombai price, fearless dog breed India",
     traits: [
       { label: "Origin", value: "Kombai, Theni district" },
       { label: "Build", value: "Powerful, 50–60cm tall" },
@@ -183,6 +191,7 @@ export const ANIMALS = [
     tagline: "Pure white royalty. The pride of our hometown.",
     description:
       "Born and bred in our own town of Rajapalayam, this snow-white sighthound is on the Indian postage stamp for a reason. Tall, lean, regal, and reserved with strangers. Famous for guarding paddy fields and palaces alike.",
+    keywords: "Rajapalayam dog puppy for sale, Rajapalayam price, white dog breed India, Indian postage stamp dog, sighthound Rajapalayam, property guard dog, paddy field guard, tall white dog breed, Rajapalayam breeder, elite guard dog, show champion dog, estate guarding dog, royal dog breed",
     traits: [
       { label: "Origin", value: "Rajapalayam (our home turf)" },
       { label: "Build", value: "Tall, 65–75cm, pure white coat" },
@@ -204,6 +213,7 @@ export const ANIMALS = [
     tagline: "Holstein Friesian — the gentle giant of dairy.",
     description:
       "Black-and-white HF cows are the highest milk-yielding breed in the world. Ours are raised on green fodder, clean water and stress-free sheds. We sell healthy, lactating and pregnant cows with verified milk records.",
+    keywords: "HF cow milk production, Holstein Friesian dairy, lactating cow price Tamil Nadu, high yield dairy cow, dairy farm cow for sale, breeding cow pair, healthy HF cattle, dairy cow export, black white cow breed, Jersey cow vs HF, cattle farm Rajapalayam, dairy cow health certificate, bulk dairy cattle supply",
     traits: [
       { label: "Breed", value: "Holstein Friesian (HF)" },
       { label: "Milk yield", value: "18–25 litres/day average" },
@@ -225,6 +235,7 @@ export const ANIMALS = [
     tagline: "Strong native goats — bred for taste and yield.",
     description:
       "Healthy native goats sold by weight for meat and breeding. Free-grazed, hormone-free, and weighed honestly. Bulk orders for functions and festivals welcomed.",
+    keywords: "native goat for sale, goat price per kg, goat meat Tamil Nadu, meat goat breed, breeding goat pair, goat bulk order wedding, healthy goat seller, goat farm Rajapalayam, live goat purchase, goat transport service, function goat supply, festival goat availability",
     traits: [
       { label: "Type", value: "Native goat" },
       { label: "Diet", value: "Free-graze + green fodder" },
@@ -245,6 +256,7 @@ export const ANIMALS = [
     tagline: "The flagship Sembari — bold, marked, magnificent.",
     description:
       "Sembari Pottu Aadu is famous for its distinctive coat markings and impressive frame. Prized for both breeding and show. A true heritage breed of South Tamil Nadu.",
+    keywords: "Sembari Pottu Aadu breeder, heritage goat breed Tamil Nadu, marked coat goat, breeding quality Sembari, show goat Tamil Nadu, Sembari meat quality, Rajapalayam goat breeder, Pottu Aadu genetics, high value breeding goat, championship goat line",
     traits: [
       { label: "Breed", value: "Sembari (Pottu)" },
       { label: "Use", value: "Breeding / Show / Meat" },
@@ -264,6 +276,7 @@ export const ANIMALS = [
     tagline: "Mayilambadi line — taller, leaner, prized.",
     description:
       "The Mayilambadi strain of Sembari is famed in the southern districts for its taller frame, lean meat ratio, and stunning coat. Excellent for breeding programs and high-value buyers.",
+    keywords: "Mayilambadi goat breed, tall lean goat variety, Southern Tamil Nadu goat breed, premium goat breeding program, high value meat goat, Mayilambadi show quality, Virudhunagar goat breed specialty, lean meat goat genetics",
     traits: [
       { label: "Breed", value: "Sembari (Mayilambadi)" },
       { label: "Use", value: "Premium breeding & show" },
@@ -284,6 +297,7 @@ export const ANIMALS = [
     tagline: "Real country chicken. Real taste.",
     description:
       "Free-range native country chicken — what your grandmother actually cooked. Lean, flavourful meat, raised on grain and insects, never battery-caged. Sold live by weight.",
+    keywords: "Naatu Koli live for sale, country chicken meat quality, desi chicken price, free-range chicken farm, traditional chicken breed, meat chicken without antibiotics, Naatu Koli wholesale, chicken for function catering, authentic village chicken, heritage chicken breed, healthy poultry meat",
     traits: [
       { label: "Type", value: "Country chicken (Naatu Koli)" },
       { label: "Raise", value: "Free-range, grain-fed" },
@@ -303,6 +317,7 @@ export const ANIMALS = [
     tagline: "The dual-purpose champion of small farms.",
     description:
       "Red Sonali (Sonali) birds are loved for steady egg production AND solid meat. Hardy, disease-resistant, and perfect for backyard or commercial flocks.",
+    keywords: "Red Sonali bird for sale, hybrid chicken breed, dual purpose chicken, egg laying chicken, backyard chicken farm, disease resistant poultry, small farm chicken, chicken for home breeding, prolific layer chicken, meat egg chicken breed",
     traits: [
       { label: "Breed", value: "Red Sonali" },
       { label: "Use", value: "Eggs + meat (dual purpose)" },
@@ -322,6 +337,7 @@ export const ANIMALS = [
     tagline: "Built for the arena. Bloodline matters.",
     description:
       "Sanda Koli (fighter hens / game fowl) bred from verified Tamil bloodlines. Strong stance, sharp reflexes, and proven game heritage. Ideal for serious breeders and game enthusiasts.",
+    keywords: "Sanda Koli game fowl, fighter hen for sale, Tamil game bird breeder, cockfighting birds, championship bloodline birds, game fowl genetics, arena fighting bird, breeding quality game fowl, pure bloodline fighter hens",
     traits: [
       { label: "Type", value: "Game fowl" },
       { label: "Bloodline", value: "Verified Tamil game lines" },
@@ -341,6 +357,7 @@ export const ANIMALS = [
     tagline: "The Tamil fighting rooster. A living trophy.",
     description:
       "Sanda Seval — the legendary Tamil fighting rooster, bred for stance, plumage, and game heart. Each bird is hand-selected from championship lines and raised on a clean, high-protein diet.",
+    keywords: "Sanda Seval rooster championship, fighting rooster for sale Tamil Nadu, game rooster bloodline, Sanda Seval breeder, fighting bird high quality, Tamil warrior rooster, cockfighting champion rooster, arena rooster fighter, legendary Sanda Seval genetics",
     traits: [
       { label: "Type", value: "Fighting rooster (Seval)" },
       { label: "Lines", value: "Championship bloodlines" },
@@ -361,6 +378,7 @@ export const ANIMALS = [
     tagline: "Real eggs from real hens, every single day.",
     description:
       "Fresh eggs from our free-range Naatu Koli flock — collected daily, never refrigerated for weeks. Rich orange yolk, hard shell, and the taste your parents grew up with. Available retail and wholesale.",
+    keywords: "farm fresh eggs daily delivery, country chicken eggs organic, Naatu koli eggs nutrition, desi eggs health benefits, free range eggs price Tamil Nadu, orange yolk eggs quality, authentic farm eggs retailer, eggs bulk order wholesale, best fresh eggs delivery, nutrient rich egg farming",
     traits: [
       { label: "Source", value: "Free-range Naatu Koli" },
       { label: "Freshness", value: "Daily collection" },
