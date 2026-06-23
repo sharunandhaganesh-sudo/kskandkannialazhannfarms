@@ -1,6 +1,18 @@
 // react-snap configuration for Vercel serverless environment
 // Uses @sparticuz/chromium for missing libnss3 dependencies
 
+let executablePath = undefined;
+
+// Load @sparticuz/chromium on Vercel (CI environment)
+if (process.env.CI) {
+  try {
+    const chromium = require('@sparticuz/chromium-core');
+    executablePath = chromium.executablePath;
+  } catch (e) {
+    console.warn('⚠️  @sparticuz/chromium-core not available, falling back to system Chromium');
+  }
+}
+
 module.exports = {
   source: 'build',
   minifyHtml: { collapseWhitespace: false, removeComments: false },
@@ -10,10 +22,7 @@ module.exports = {
     '--disable-dev-shm-usage',
   ],
   puppeteer: {
-    // Use @sparticuz/chromium for serverless environments (Vercel, Lambda, etc)
-    executablePath: process.env.CI
-      ? require('@sparticuz/chromium').executablePath
-      : undefined,
+    executablePath: executablePath,
   },
   skipThirdPartyRequests: true,
   waitFor: 1000,
