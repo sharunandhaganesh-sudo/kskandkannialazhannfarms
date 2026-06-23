@@ -26,16 +26,6 @@ export default function Footer() {
 
             <div className="mt-10 grid sm:grid-cols-2 gap-6 max-w-2xl">
               <div className="border-t border-[#f9f8f6]/20 pt-5">
-                <p className="label-eyebrow text-[#f4c20d]">Cow & Goat</p>
-                <a
-                  href={`tel:+91${CONTACTS.cowGoat[0]}`}
-                  data-testid="footer-phone-cow"
-                  className="block font-serif-display text-2xl mt-2 hover:text-[#f4c20d] transition-colors"
-                >
-                  +91 {CONTACTS.cowGoat[0]}
-                </a>
-              </div>
-              <div className="border-t border-[#f9f8f6]/20 pt-5">
                 <p className="label-eyebrow text-[#f4c20d]">Dogs & Roosters</p>
                 <a
                   href={`tel:+91${CONTACTS.dogCock[0]}`}
@@ -50,6 +40,16 @@ export default function Footer() {
                   className="block font-serif-display text-2xl hover:text-[#f4c20d] transition-colors"
                 >
                   +91 {CONTACTS.dogCock[1]}
+                </a>
+              </div>
+              <div className="border-t border-[#f9f8f6]/20 pt-5">
+                <p className="label-eyebrow text-[#f4c20d]">Cow & Goat</p>
+                <a
+                  href={`tel:+91${CONTACTS.cowGoat[0]}`}
+                  data-testid="footer-phone-cow"
+                  className="block font-serif-display text-2xl mt-2 hover:text-[#f4c20d] transition-colors"
+                >
+                  +91 {CONTACTS.cowGoat[0]}
                 </a>
               </div>
             </div>

@@ -149,12 +149,12 @@ Message: ${form.message || "—"}`;
                 <p className="label-eyebrow text-[#1f4d2b]">Phone numbers</p>
                 <div className="mt-4 grid gap-5">
                   <div className="border-t border-[#eae7dd] pt-4">
-                    <p className="label-eyebrow text-[#5c5c5c]">Cow & Goat</p>
-                    {CONTACTS.cowGoat.map((n) => (
+                    <p className="label-eyebrow text-[#5c5c5c]">Dogs & Roosters</p>
+                    {CONTACTS.dogCock.map((n) => (
                       <a
                         key={n}
                         href={`tel:+91${n}`}
-                        data-testid={`contact-tel-cow-${n}`}
+                        data-testid={`contact-tel-dog-${n}`}
                         className="block font-serif-display text-2xl md:text-3xl text-[#1f4d2b] hover:text-[#16381f]"
                       >
                         +91 {n}
@@ -162,12 +162,12 @@ Message: ${form.message || "—"}`;
                     ))}
                   </div>
                   <div className="border-t border-[#eae7dd] pt-4">
-                    <p className="label-eyebrow text-[#5c5c5c]">Dogs & Roosters</p>
-                    {CONTACTS.dogCock.map((n) => (
+                    <p className="label-eyebrow text-[#5c5c5c]">Cow & Goat</p>
+                    {CONTACTS.cowGoat.map((n) => (
                       <a
                         key={n}
                         href={`tel:+91${n}`}
-                        data-testid={`contact-tel-dog-${n}`}
+                        data-testid={`contact-tel-cow-${n}`}
                         className="block font-serif-display text-2xl md:text-3xl text-[#1f4d2b] hover:text-[#16381f]"
                       >
                         +91 {n}

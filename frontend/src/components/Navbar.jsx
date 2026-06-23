@@ -85,7 +85,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <a
-            href={`tel:+91${CONTACTS.cowGoat[0]}`}
+            href={`tel:+91${CONTACTS.dogCock[0]}`}
             data-testid="navbar-call-btn"
             className="hidden md:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#1f4d2b] hover:bg-[#16381f] text-white text-[13px] font-semibold transition-all hover:-translate-y-[1px]"
           >
@@ -125,11 +125,11 @@ export default function Navbar() {
               </NavLink>
             ))}
             <a
-              href={`tel:+91${CONTACTS.cowGoat[0]}`}
+              href={`tel:+91${CONTACTS.dogCock[0]}`}
               className="mt-5 inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-[#1f4d2b] text-white font-semibold"
               data-testid="mobile-call-btn"
             >
-              <Phone size={16} /> Call: +91 {CONTACTS.cowGoat[0]}
+              <Phone size={16} /> Call: +91 {CONTACTS.dogCock[0]}
             </a>
           </div>
         </div>
