@@ -67,7 +67,7 @@
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
     "prebuild": "node scripts/generate-sitemap.mjs",
     "build": "craco build",
-    "postbuild": "react-snap",
+    "postbuild": "react-snap --config snap.js",
     "test": "craco test"
   },
   "browserslist": {
@@ -82,36 +82,7 @@
       "last 1 safari version"
     ]
   },
-  "reactSnap": {
-    "source": "build",
-    "minifyHtml": { "collapseWhitespace": false, "removeComments": false },
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
-    "skipThirdPartyRequests": true,
-    "waitFor": 1000,
-    "include": [
-      "/",
-      "/contact",
-      "/areas-we-serve",
-      "/category/cows",
-      "/category/goats",
-      "/category/dogs",
-      "/category/poultry",
-      "/category/eggs",
-      "/animal/chippiparai",
-      "/animal/kanni",
-      "/animal/kombai",
-      "/animal/rajapalayam",
-      "/animal/hf-cow",
-      "/animal/goat",
-      "/animal/sembari-pottu",
-      "/animal/sembari-mayilambadi",
-      "/animal/naatu-koli",
-      "/animal/red-sonali",
-      "/animal/sanda-koli",
-      "/animal/sanda-seval",
-      "/animal/farm-eggs"
-    ]
-  },
+  "reactSnap": {},
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@craco/craco": "7.1.0",
