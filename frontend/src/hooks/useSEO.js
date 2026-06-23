@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 
+const SITE_URL = "https://www.kannialazhannfarm.in";
 const DEFAULT_OG = "/animals/kanni-dog-rajapalayam-tamilnadu.jpg";
 
 export default function useSEO({ title, description, image, url, jsonLd, noindex }) {
@@ -36,7 +37,7 @@ export default function useSEO({ title, description, image, url, jsonLd, noindex
     setMeta('meta[name="twitter:card"]', "content", "summary_large_image");
     setMeta('meta[property="og:type"]', "content", "website");
 
-    const pageUrl = url || window.location.href.split("?")[0].split("#")[0];
+    const pageUrl = url || SITE_URL;
     setMeta('meta[property="og:url"]', "content", pageUrl);
 
     let canonical = document.head.querySelector('link[rel="canonical"]');

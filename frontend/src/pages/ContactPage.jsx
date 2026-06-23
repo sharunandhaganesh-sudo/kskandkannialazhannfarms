@@ -6,11 +6,14 @@ import { CONTACTS, CATEGORIES } from "../data/animals";
 import { buildWhatsappLink } from "../lib/utils";
 import { toast } from "sonner";
 
+const SITE_URL = "https://www.kannialazhannfarm.in";
+
 export default function ContactPage() {
   useSEO({
-    title: "Contact KSK & Kannialazhann Farm — WhatsApp & Phone | Rajapalayam",
+    title: "Contact KSK & Kannialazhann Farm — Buy Farm Animals Online | Rajapalayam",
     description:
-      "Call or WhatsApp KSK & Kannialazhann Farm directly. Cow & Goat: +91 7339598737. Dogs / Poultry / Eggs: +91 7305644912, +91 7339026424. Visit us in Gopalapuram, Rajapalayam.",
+      "Contact KSK & Kannialazhann Farm to buy native farm animals in Tamil Nadu. Call or WhatsApp us for dogs, goats, cows, poultry & eggs. Dogs: +91 7305644912. Goats & Cows: +91 7339598737. Available in Rajapalayam, Gopalapuram, Sivakasi, Virudhunagar, Madurai.",
+    url: `${SITE_URL}/contact`,
   });
   const [form, setForm] = useState({
     name: "",

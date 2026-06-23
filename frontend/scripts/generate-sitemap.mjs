@@ -2,7 +2,7 @@ import { writeFileSync } from "fs";
 import { fileURLToPath } from "url";
 import { CATEGORIES, ANIMALS } from "../src/data/animals.js";
 
-const BASE_URL = "https://kannialazhannfarm.in";
+const BASE_URL = "https://www.kannialazhannfarm.in";
 const today = new Date().toISOString().split("T")[0];
 
 const routes = [

@@ -12,6 +12,8 @@ import {
   AccordionTrigger,
 } from "../components/ui/accordion";
 
+const SITE_URL = "https://www.kannialazhannfarm.in";
+
 export default function CategoryPage() {
   const { slug } = useParams();
   const category = getCategoryBySlug(slug);
@@ -22,8 +24,8 @@ export default function CategoryPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://kannialazhannfarm.in/" },
-      { "@type": "ListItem", position: 2, name: category?.name || "Category", item: `https://kannialazhannfarm.in/category/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: category?.name || "Category", item: `${SITE_URL}/category/${slug}` },
     ],
   };
 
@@ -40,12 +42,13 @@ export default function CategoryPage() {
 
   useSEO({
     title: category
-      ? `${category.name} for Sale in Rajapalayam & Gopalapuram, Tamil Nadu (${category.tamil}) — KSK & Kannialazhann Farm`
+      ? `Buy ${category.name} in Rajapalayam & Tamil Nadu (${category.tamil}) - Direct from KSK & Kannialazhann Farm`
       : "KSK & Kannialazhann Farm",
     description: category
-      ? `${category.blurb} Farm in Gopalapuram & Rajapalayam. Direct from our farms delivering across Tamil Nadu. ${category.price ? "Live weight " + category.price + "." : ""}`
+      ? `${category.blurb} - Buy authentic ${category.name.toLowerCase()} online from KSK & Kannialazhann Farm in Gopalapuram, Rajapalayam. Direct farm sales with delivery to Sivakasi, Virudhunagar, Madurai, Tirunelveli & across Tamil Nadu. 100% native breeds, family-run farm. ${category.price ? "Current rate: ₹" + category.price.match(/\d+/)?.[0] + ". " : ""}Contact us for bulk orders and breeding stock.`
       : undefined,
     image: category?.cover,
+    url: `${SITE_URL}/category/${slug}`,
     jsonLd: [breadcrumbSchema, faqSchema].filter(Boolean),
   });
 

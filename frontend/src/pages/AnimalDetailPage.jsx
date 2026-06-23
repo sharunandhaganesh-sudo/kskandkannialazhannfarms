@@ -7,6 +7,8 @@ import useSEO from "../hooks/useSEO";
 import { getAnimalBySlug, getCategoryBySlug, ANIMALS } from "../data/animals";
 import { buildWhatsappLink } from "../lib/utils";
 
+const SITE_URL = "https://www.kannialazhannfarm.in";
+
 export default function AnimalDetailPage() {
   const { slug } = useParams();
   const animal = getAnimalBySlug(slug);
@@ -28,7 +30,7 @@ export default function AnimalDetailPage() {
     "@type": "Product",
     name: `${animal.name} (${animal.tamil})`,
     description: animal.description,
-    image: `https://kannialazhannfarm.in${animal.hero}`,
+    image: `${SITE_URL}${animal.hero}`,
     category: category?.name,
     brand: { "@type": "Brand", name: "KSK & Kannialazhann Farm" },
     offers: priceMatch ? {
@@ -37,13 +39,13 @@ export default function AnimalDetailPage() {
       price: priceMatch[1],
       availability: "https://schema.org/InStock",
       areaServed: "Tamil Nadu",
-      url: `https://kannialazhannfarm.in/animal/${animal.slug}`,
+      url: `${SITE_URL}/animal/${animal.slug}`,
     } : {
       "@type": "Offer",
       availability: "https://schema.org/InStock",
       priceCurrency: "INR",
       areaServed: "Tamil Nadu",
-      url: `https://kannialazhannfarm.in/animal/${animal.slug}`,
+      url: `${SITE_URL}/animal/${animal.slug}`,
     },
   } : null;
 
@@ -51,20 +53,21 @@ export default function AnimalDetailPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://kannialazhannfarm.in/" },
-      { "@type": "ListItem", position: 2, name: category.name, item: `https://kannialazhannfarm.in/category/${animal.category}` },
-      { "@type": "ListItem", position: 3, name: animal.name, item: `https://kannialazhannfarm.in/animal/${animal.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: category.name, item: `${SITE_URL}/category/${animal.category}` },
+      { "@type": "ListItem", position: 3, name: animal.name, item: `${SITE_URL}/animal/${animal.slug}` },
     ],
   } : null;
 
   useSEO({
     title: animal
-      ? `${animal.name} (${animal.tamil}) in Rajapalayam & Gopalapuram — ${animal.tagline} | KSK & Kannialazhann Farm`
+      ? `Buy ${animal.name} (${animal.tamil}) in Tamil Nadu - KSK & Kannialazhann Farm Rajapalayam`
       : "KSK & Kannialazhann Farm",
     description: animal
-      ? `${animal.description.slice(0, 120)}… Available at farm in Rajapalayam & Gopalapuram. Direct from KSK Farm & Kannialazhann Farm, Tamil Nadu.`
+      ? `Authentic ${animal.name} (${animal.tamil}) breed available at KSK & Kannialazhann Farm. ${animal.description.slice(0, 100)}… Direct from farm in Rajapalayam & Gopalapuram. Delivery available to Sivakasi, Virudhunagar, Madurai, Tirunelveli & all Tamil Nadu. Family-run native breed farm since 2021. For sales inquiries, contact us via WhatsApp.`
       : undefined,
     image: animal?.hero,
+    url: `${SITE_URL}/animal/${slug}`,
     jsonLd: [productSchema, breadcrumbSchema].filter(Boolean),
   });
 

@@ -1,10 +1,13 @@
 import { CONTACTS } from "../data/animals";
 import useSEO from "../hooks/useSEO";
 
+const SITE_URL = "https://www.kannialazhannfarm.in";
+
 export default function AreasWeServePage() {
   useSEO({
-    title: "Livestock Delivery Across Tamil Nadu | KSK & Kannialazhann Farm",
-    description: "We deliver native Tamil dogs, HF dairy cows, goats, poultry and farm-fresh eggs across Tamil Nadu including Sivakasi, Srivilliputhur, Virudhunagar, Sattur, Tirunelveli, and Madurai.",
+    title: "Livestock & Farm Animal Delivery Across Tamil Nadu | KSK & Kannialazhann Farm",
+    description: "KSK & Kannialazhann Farm delivers native farm animals across Tamil Nadu including Sivakasi, Srivilliputhur, Virudhunagar, Sattur, Tirunelveli, Madurai, Rajapalayam & Gopalapuram. Buy dogs, goats, cows, poultry & eggs online with fast delivery to all areas.",
+    url: `${SITE_URL}/areas-we-serve`,
   });
 
   const areas = [

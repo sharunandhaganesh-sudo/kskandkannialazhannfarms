@@ -5,6 +5,7 @@ import useSEO from "../hooks/useSEO";
 import { CATEGORIES, CONTACTS, ANIMALS } from "../data/animals";
 import { buildWhatsappLink } from "../lib/utils";
 
+const SITE_URL = "https://www.kannialazhannfarm.in";
 const STATS = [
   { v: "12+", k: "Breeds raised" },
   { v: "2021", k: "Family-run since" },
@@ -14,9 +15,10 @@ const STATS = [
 
 export default function Home() {
   useSEO({
-    title: "Kannialazhann Farm & KSK Farm | Native Farm Animals - Rajapalayam Dogs, Goats, Cows & Poultry",
-    description: "Kannialazhann Farm & KSK Farm - Your trusted destination for native farm animals. Buy Rajapalayam dogs, Kanni dogs, Sembari goats, HF cows & country poultry from KSK Farm in Gopalapuram. Authentic breeding, quality livestock delivered across Tamil Nadu.",
+    title: "Kannialazhann Farm & KSK Farm | Buy Native Rajapalayam Dogs, Kanni Dogs, Goats, Cows, Poultry - Tamil Nadu",
+    description: "KSK & Kannialazhann Farm - Premium native livestock farm in Rajapalayam & Gopalapuram, Tamil Nadu. Buy authentic Rajapalayam dogs, Kanni dogs, Kombai dogs, Sembari goats, HF dairy cows, country chicken, poultry & farm eggs. Direct farm sales with delivery across Sivakasi, Virudhunagar, Madurai, Tirunelveli & all Tamil Nadu. 100% native bloodlines, family-run since 2021.",
     image: "/animals/kanni-dog-rajapalayam-tamilnadu.jpg",
+    url: `${SITE_URL}/`,
   });
   return (
     <div className="overflow-x-hidden">
