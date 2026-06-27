@@ -38,13 +38,13 @@ export default function AnimalDetailPage() {
       priceCurrency: "INR",
       price: priceMatch[1],
       availability: "https://schema.org/InStock",
-      areaServed: "Tamil Nadu",
+      areaServed: "Tamil Nadu, Kerala",
       url: `${SITE_URL}/animal/${animal.slug}`,
     } : {
       "@type": "Offer",
       availability: "https://schema.org/InStock",
       priceCurrency: "INR",
-      areaServed: "Tamil Nadu",
+      areaServed: "Tamil Nadu, Kerala",
       url: `${SITE_URL}/animal/${animal.slug}`,
     },
   } : null;
@@ -64,7 +64,7 @@ export default function AnimalDetailPage() {
       ? `Buy ${animal.name} (${animal.tamil}) in Tamil Nadu - KSK & Kannialazhann Farm Rajapalayam`
       : "KSK & Kannialazhann Farm",
     description: animal
-      ? `Authentic ${animal.name} (${animal.tamil}) breed available at KSK & Kannialazhann Farm. ${animal.description.slice(0, 100)}… Direct from farm in Rajapalayam & Gopalapuram. Delivery available to Sivakasi, Virudhunagar, Madurai, Tirunelveli & all Tamil Nadu. Family-run native breed farm since 2021. For sales inquiries, contact us via WhatsApp.`
+      ? `Authentic ${animal.name} (${animal.tamil}) breed available at KSK & Kannialazhann Farm. ${animal.description.slice(0, 100)}… Direct from farm in Rajapalayam & Gopalapuram. Delivery available to Sivakasi, Virudhunagar, Madurai, Tirunelveli, Kochi & Thiruvananthapuram. Available across Tamil Nadu and Kerala. Family-run native breed farm since 2021. For sales inquiries, contact us via WhatsApp.`
       : undefined,
     image: animal?.hero,
     url: `${SITE_URL}/animal/${slug}`,
@@ -135,13 +135,20 @@ export default function AnimalDetailPage() {
                 {animal.tagline}
               </p>
             </Reveal>
-            <Reveal delay={220}>
+            {animal.directAnswer && (
+              <Reveal delay={220}>
+                <p className="mt-6 text-[#1f4d2b] text-[15px] leading-relaxed">
+                  {animal.directAnswer}
+                </p>
+              </Reveal>
+            )}
+            <Reveal delay={animal.directAnswer ? 280 : 220}>
               <p className="mt-6 text-[#5c5c5c] text-[15px] leading-relaxed">
                 {animal.description}
               </p>
             </Reveal>
 
-            <Reveal delay={300}>
+            <Reveal delay={animal.directAnswer ? 360 : 300}>
               <div className="mt-8 inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#f4c20d] text-[#1f4d2b] font-bold text-[13px]">
                 {animal.priceNote}
               </div>

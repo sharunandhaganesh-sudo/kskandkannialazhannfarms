@@ -45,7 +45,7 @@ export default function CategoryPage() {
       ? `Buy ${category.name} in Rajapalayam & Tamil Nadu (${category.tamil}) - Direct from KSK & Kannialazhann Farm`
       : "KSK & Kannialazhann Farm",
     description: category
-      ? `${category.blurb} - Buy authentic ${category.name.toLowerCase()} online from KSK & Kannialazhann Farm in Gopalapuram, Rajapalayam. Direct farm sales with delivery to Sivakasi, Virudhunagar, Madurai, Tirunelveli & across Tamil Nadu. 100% native breeds, family-run farm. ${category.price ? "Current rate: ₹" + category.price.match(/\d+/)?.[0] + ". " : ""}Contact us for bulk orders and breeding stock.`
+      ? `${category.blurb} - Buy authentic ${category.name.toLowerCase()} online from KSK & Kannialazhann Farm in Gopalapuram, Rajapalayam. Direct farm sales with delivery to Sivakasi, Virudhunagar, Madurai, Tirunelveli, Kochi & Thiruvananthapuram. Delivery available across Tamil Nadu and Kerala. 100% native breeds, family-run farm. ${category.price ? "Current rate: ₹" + category.price.match(/\d+/)?.[0] + ". " : ""}Contact us for bulk orders and breeding stock.`
       : undefined,
     image: category?.cover,
     url: `${SITE_URL}/category/${slug}`,
@@ -87,8 +87,15 @@ export default function CategoryPage() {
               {category.blurb}
             </p>
           </Reveal>
-          {category.price && (
+          {category.directAnswer && (
             <Reveal delay={400}>
+              <p className="mt-6 max-w-2xl text-white/80 text-base md:text-lg leading-relaxed">
+                {category.directAnswer}
+              </p>
+            </Reveal>
+          )}
+          {category.price && (
+            <Reveal delay={480}>
               <div className="mt-8 inline-flex px-5 py-2.5 rounded-full bg-[#f4c20d] text-[#1f4d2b] font-bold text-sm">
                 Live weight pricing · {category.price}
               </div>

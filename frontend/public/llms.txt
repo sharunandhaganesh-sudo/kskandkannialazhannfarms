@@ -1,0 +1,21 @@
+Kannialazhann Farm & KSK Farm - AI content summary
+
+Main site pages:
+- / : Home page for native livestock in Tamil Nadu and Kerala.
+- /areas-we-serve : Delivery areas page listing service coverage across Tamil Nadu and Kerala.
+- /category/cows : Dairy cows category with HF cows and farm delivery.
+- /category/goats : Goat category with Sembari and native goats for meat, breeding, and function orders.
+- /category/dogs : Native dog breeds category (Rajapalayam, Kanni, Chippiparai, Kombai).
+- /category/poultry : Poultry category with Naatu Koli, Red Sonali, and Sanda Koli.
+- /category/eggs : Farm eggs category with fresh daily free-range eggs.
+
+Primary keywords:
+- farm animal delivery Tamil Nadu Kerala
+- Rajapalayam dogs, Kanni dogs, Chippiparai, Kombai
+- Sembari goat sale Tamil Nadu Kerala
+- HF dairy cow delivery
+- Naatu Koli country chicken
+- fresh farm eggs delivery
+- native livestock farm Rajapalayam
+
+AEO direct answer snippets are stored in category and animal data for fast answer retrieval.

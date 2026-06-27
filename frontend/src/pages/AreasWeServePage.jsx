@@ -5,8 +5,8 @@ const SITE_URL = "https://www.kannialazhannfarm.in";
 
 export default function AreasWeServePage() {
   useSEO({
-    title: "Livestock & Farm Animal Delivery Across Tamil Nadu | KSK & Kannialazhann Farm",
-    description: "KSK & Kannialazhann Farm delivers native farm animals across Tamil Nadu including Sivakasi, Srivilliputhur, Virudhunagar, Sattur, Tirunelveli, Madurai, Rajapalayam & Gopalapuram. Buy dogs, goats, cows, poultry & eggs online with fast delivery to all areas.",
+    title: "Livestock & Farm Animal Delivery Across Tamil Nadu & Kerala | KSK & Kannialazhann Farm",
+    description: "KSK & Kannialazhann Farm delivers native farm animals across Tamil Nadu and Kerala. From Rajapalayam to Kochi, Kollam, and Thiruvananthapuram, buy dogs, goats, cows, poultry & eggs with reliable transport and clear delivery terms.",
     url: `${SITE_URL}/areas-we-serve`,
   });
 
@@ -15,6 +15,36 @@ export default function AreasWeServePage() {
       name: "Rajapalayam & Gopalapuram",
       description: "Our home base. Same-day or next-day pickup available. Visit the farm for personalized consultations.",
       contact: CONTACTS.whatsappPrimary,
+    },
+    {
+      name: "Kanyakumari",
+      description: "The southern transport hub for Kerala-bound deliveries. Ideal for buyers near the Tamil Nadu–Kerala border.",
+      contact: CONTACTS.whatsappPrimary,
+    },
+    {
+      name: "Punalur",
+      description: "Nearest major Kerala town via the Shenkottai pass. We deliver goats, dogs and poultry here on request.",
+      contact: CONTACTS.whatsappCowGoat,
+    },
+    {
+      name: "Kollam",
+      description: "Strong demand for native dog breeds and Sembari goats. We arrange deliveries to Kollam with care and documentation.",
+      contact: CONTACTS.whatsappPrimary,
+    },
+    {
+      name: "Kottarakkara",
+      description: "A growing poultry and livestock market. We deliver Naatu Koli, Red Sonali, and native goats to this region.",
+      contact: CONTACTS.whatsappCowGoat,
+    },
+    {
+      name: "Thiruvananthapuram",
+      description: "Major Kerala city demand for poultry, eggs, and native dog breeds. We ship with trusted transport partners.",
+      contact: CONTACTS.whatsappPrimary,
+    },
+    {
+      name: "Pathanamthitta",
+      description: "Service available for livestock and poultry buyers looking for authentic farm-sourced stock.",
+      contact: CONTACTS.whatsappCowGoat,
     },
     {
       name: "Srivilliputhur",
@@ -57,10 +87,10 @@ export default function AreasWeServePage() {
     <div className="min-h-screen pt-32 pb-20 px-5">
       <div className="max-w-4xl mx-auto">
         <h1 className="font-serif-display text-5xl md:text-6xl text-[#2d2d2a] mb-6">
-          We Deliver Native Livestock Across Tamil Nadu
+          We Deliver Native Livestock Across Tamil Nadu & Kerala
         </h1>
         <p className="text-lg text-[#5c5c5c] mb-16">
-          From Rajapalayam to every corner of Tamil Nadu — our goats, dogs, cows, poultry and eggs reach households, farms, and function organizers across the state. Below is how we serve your region.
+          From Rajapalayam to every corner of Tamil Nadu and Kerala — our goats, dogs, cows, poultry and eggs reach households, farms, and function organizers across the region. Below is how we serve your area.
         </p>
 
         <div className="grid gap-12 md:gap-16">

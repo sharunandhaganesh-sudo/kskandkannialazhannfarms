@@ -22,6 +22,8 @@ export const CATEGORIES = [
     cover: "/animals/HF Cow.jpg",
     blurb:
       "Premium HF dairy stock — heavy milkers, pasture-raised, ethically maintained.",
+    directAnswer:
+      "Buy healthy HF dairy cows directly from Rajapalayam — high milk yield, cleanly raised, and available with verified milk records and delivery across Tamil Nadu and Kerala.",
     keywords: "HF cow for sale Tamil Nadu, Holstein Friesian dairy cow Rajapalayam, high milk yield dairy cow, lactating cow for sale, pregnant cow seller, dairy cow price Tamil Nadu, HF cow breeding pair, dairy farming cows Tamil Nadu, jersey cow vs HF cow, dairy cow export India, bulk dairy cows Rajapalayam",
     contact: ["7339598737"],
     whatsapp: "917339598737",
@@ -45,6 +47,8 @@ export const CATEGORIES = [
     cover: "/animals/Goat.jpg",
     blurb:
       "Sembari and native breeds — Strong genetics, healthy herd.",
+    directAnswer:
+      "Our Sembari and native goats are available in Tamil Nadu and Kerala, with honest live-weight pricing, bulk supply for festivals, and trusted delivery by trained handlers.",
     keywords: "Sembari goat for sale Tamil Nadu, Pottu Aadu goat Rajapalayam, Mayilambadi goat breeder, native goat meat Tamil Nadu, goat price per kg Tamil Nadu, goat for sale Rajapalayam, bulk goat order wedding function, breeding pair goats Tamil Nadu, goat farm Virudhunagar Sivakasi, healthy goat seller, goat fattening for sale, live goat purchase Tamil Nadu",
     contact: ["7339598737"],
     whatsapp: "917339598737",
@@ -69,6 +73,8 @@ export const CATEGORIES = [
     cover: "/animals/Rajapalayam Dog.jpg",
     blurb:
       "Four legendary Tamil hound breeds — guardians, hunters, companions. Raised at the soil they were born for.",
+    directAnswer:
+      "We sell pure Rajapalayam, Kanni, Chippiparai, and Kombai dogs from our farm in Rajapalayam, with delivery and support across Tamil Nadu and Kerala.",
     keywords: "Rajapalayam dog for sale, Rajapalayam puppy price, Kanni dog breeder Tamil Nadu, Chippiparai dog Tirunelveli, Kombai dog hunting, native Tamil dog breeds, Indian dog breeds for guarding, sighthound Tamil Nadu, white dog breed Rajapalayam, dog breeder Rajapalayam, puppy training Tamil Nadu, dog stud services, native dog export India, Rajapalayam dog championship, hunting dog Tamil Nadu",
     contact: ["7305644912", "7339026424"],
     whatsapp: "917305644912",
@@ -92,6 +98,8 @@ export const CATEGORIES = [
     cover: "/animals/Sanda Seval.jpg",
     blurb:
       "Naatu Koli at ₹600/kg, Red Sonali, and prized Sanda Seval fighting roosters.",
+    directAnswer:
+      "Country chicken, Sanda Seval, and Red Sonali from our farm are available for reliable delivery across Tamil Nadu and Kerala, with healthy stock and honest pricing.",
     keywords: "Naatu Koli for sale Tamil Nadu, country chicken breeder Rajapalayam, Sanda Seval rooster championship, fighting rooster seller, Red Sonali bird price, game fowl breeder Tamil Nadu, poultry farm Tamil Nadu, live chicken delivery, Naatu chicken meat quality, free-range chicken farm, Sanda Koli game hens, rooster price Tamil Nadu, poultry breeding pair, chicken for wedding catering",
     contact: ["7305644912", "7339026424"],
     whatsapp: "917305644912",
@@ -116,6 +124,8 @@ export const CATEGORIES = [
     cover: "/animals/Naatu Koli Eggs.jpg",
     blurb:
       "Fresh country chicken eggs, daily from our free-range hens. Rich yolk, strong shell, real nutrition.",
+    directAnswer:
+      "Fresh eggs from our free-range Naatu Koli hens are collected daily and delivered across Tamil Nadu and Kerala for restaurants, families, and wholesale customers.",
     keywords: "farm fresh eggs Tamil Nadu, country chicken eggs Rajapalayam, organic eggs delivery, free-range eggs price, desi eggs health benefits, Naatu chicken eggs nutritious, eggs bulk order restaurant, daily egg delivery service, genuine country eggs, organic farming eggs, eggs for baking quality, farm eggs subscription, wholesale egg supplier Tamil Nadu, healthy egg nutrition",
     contact: ["7305644912", "7339026424"],
     whatsapp: "917305644912",
@@ -169,6 +179,8 @@ export const ANIMALS = [
     hero: "/animals/Kanni Dog.jpg",
     gallery: ["/animals/Kanni Dog.jpg", "/animals/Kanni Dog 2.jpg"],
     tagline: "The maiden hound — gifted to the bride.",
+    directAnswer:
+      "Kanni dogs from Rajapalayam are small, loyal and excellent family guardians, available across Tamil Nadu and Kerala with farm-direct health checks.",
     description:
       "Sleek, agile, and almost mythological — Kanni were traditionally given to a bride at her wedding as a guardian. Smaller and more affectionate than Chippiparai, they bond deeply and are unmatched at chasing hare and small game.",
     keywords: "Kanni dog breed for sale, Kanni puppy price Tamil Nadu, Kanni dog breeder Tirunelveli, Indian native dog affectionate, small hunting dog breed, hare hunting dog, loyal family dog India, Kanni temperament care, dog for apartment living, small guard dog India, Kanni heritage breed",
